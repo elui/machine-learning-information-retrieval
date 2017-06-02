@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cs276.pa4.Scorers.AScorer;
+import cs276.pa4.Scorers.BM25Scorer;
+
 public class Feature {
 
 	public static boolean isSublinearScaling = true;
@@ -96,16 +99,21 @@ public class Feature {
 				tfs.get(tfType).put(queryWord, tfs.get(tfType).get(queryWord)/normalizationFactor);
 	}
 
-	public double[] extractMoreFeatures(Document d, Query q, Map<Query,Map<String, Document>> dataMap) {
+	public double[] extractMoreFeatures(Document d, Query q, Map<Query,Map<String, Document>> dataMap, AScorer bm25Scorer) {
 
 		double[] basic = extractFeatureVector(d, q);
-		double[] more = null;
+		double[] more = new double[1];
+		more[0] = bm25Scorer.getSimScore(d, q);
+		
+		double[] result = new double[basic.length + more.length];
+		Util.copyNElems(basic, result, 0, basic.length);
+		Util.copyNElems(more, result, basic.length-1, more.length);
+		return result;
 
 		//Additional features et added here:
 		/*
 		 * @TODO: Your code here
 		 */
-		return null;
 	}
 
 }

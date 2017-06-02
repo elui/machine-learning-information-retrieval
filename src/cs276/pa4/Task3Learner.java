@@ -1,6 +1,5 @@
 package cs276.pa4;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,10 +18,10 @@ import weka.core.SelectedTag;
  * Implements Pairwise learner that can be used to train SVM
  *
  */
-public class PairwiseLearner extends Learner {
+public class Task3Learner extends Learner {
 	private LibSVM model;
 	private int classFlipper = 1;
-	public PairwiseLearner(boolean isLinearKernel){
+	public Task3Learner(boolean isLinearKernel){
 		try{
 			model = new LibSVM();
 		} catch (Exception e){
@@ -34,7 +33,7 @@ public class PairwiseLearner extends Learner {
 		}
 	}
 
-	public PairwiseLearner(double C, double gamma, boolean isLinearKernel){
+	public Task3Learner(double C, double gamma, boolean isLinearKernel){
 		try{
 			model = new LibSVM();
 		} catch (Exception e){
@@ -47,6 +46,7 @@ public class PairwiseLearner extends Learner {
 			model.setKernelType(new SelectedTag(LibSVM.KERNELTYPE_LINEAR, LibSVM.TAGS_KERNELTYPE));
 		}
 	}
+	
 
 	@Override
 	public Instances extractTrainFeatures(String train_data_file,
@@ -58,6 +58,7 @@ public class PairwiseLearner extends Learner {
 		 * Add new attribute  to store relevance in the train dataset
 		 * Populate data
 		 */
+		
 
 		Instances instances = null;
 		
@@ -68,6 +69,7 @@ public class PairwiseLearner extends Learner {
 		attributes.add(new Attribute("body_w"));
 		attributes.add(new Attribute("header_w"));
 		attributes.add(new Attribute("anchor_w"));
+		attributes.add(new Attribute("bm25"));
 
 		ArrayList<String> classLabels = new ArrayList<String>();
 	    classLabels.add("+1");
@@ -76,11 +78,14 @@ public class PairwiseLearner extends Learner {
 	    attributes.add(relevance);
 
 		instances = new Instances("train_dataset", attributes, 0);
+
 		int numAttributes = instances.numAttributes();
+
 		instances.setClassIndex(numAttributes-1);
 
 		try {
-			Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>> signalInfo = Util.loadSignalFile(train_data_file, train_rel_file, idfs, true, false);
+
+			Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>> signalInfo = Util.loadSignalFile(train_data_file, train_rel_file, idfs, true,true);
 			Instances queryDocVectors = signalInfo.getFirst();
 			Map<Query, Map<Document, Integer>> indexMap = signalInfo.getFourth();
 			
@@ -115,8 +120,7 @@ public class PairwiseLearner extends Learner {
 						
 						double[] differenceVector = new double[numAttributes];
 						
-						// Only go until the instance feature vector - 1 here because we don't need relevance score here
-						for (int k = 0; k < higherRatedFeatureVec.length-1;k++) {
+						for (int k = 0; k < numAttributes; k++) {
 							double diff = classFlipper == 1 ? higherRatedFeatureVec[k] - lowerRatedFeatureVec[k] : lowerRatedFeatureVec[k] - higherRatedFeatureVec[k];
 							differenceVector[k] = diff;
 						}
@@ -131,8 +135,10 @@ public class PairwiseLearner extends Learner {
 					}
 				}
 			}
+
+			System.out.println("extract train: " + instances.get(0));
 			return instances;
-		} catch(IOException ioe) {
+		} catch(Exception ioe) {
 			ioe.printStackTrace();
 			return null;
 		}
@@ -161,12 +167,35 @@ public class PairwiseLearner extends Learner {
 		 */
 		TestFeatures testFeatures = new TestFeatures();
 		try {
+//			AScorer bm25Scorer = new BM25Scorer(idfs, Util.loadQueryDict(test_data_file));
 			Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>> testSignals = 
-					Util.loadSignalFile(test_data_file, null, idfs, true, false);
-			testFeatures.features = testSignals.getFirst();
+					Util.loadSignalFile(test_data_file, null, idfs, true, true);
+			Instances instances = testSignals.getFirst();
+//			instances.insertAttributeAt(new Attribute("bm25"), instances.numAttributes()-1);
+//
+//			Map<Query, Map<Document, Integer>> indexMap = testSignals.getFourth();
+//			// Add BM25 score to the features list
+//			for (Query query : indexMap.keySet()) {
+//				List<Pair<Document, Instance>> documentInstances = new ArrayList<Pair<Document,Instance>>();
+//				for (Document doc : indexMap.get(query).keySet()) {
+//					int index = indexMap.get(query).get(doc);
+//
+//					double bm25Score = bm25Scorer.getSimScore(doc, query);
+//					Instance instance = instances.instance(index);
+//					
+//					double[] updatedInstanceVec = new double[instance.numAttributes()+1];
+//					copyNElems(instance.toDoubleArray(), updatedInstanceVec, numFieldFeatures);
+//					updatedInstanceVec[bm25Index] = bm25Score;
+//					Instance newInstance = new DenseInstance(1.0, updatedInstanceVec);
+//
+//					instances.set(index, newInstance);
+//				}
+//			}
+			System.out.println("extract test: " + instances.get(0));
+			testFeatures.features = instances;
 			testFeatures.index_map = testSignals.getFourth();
 			return testFeatures;
-		} catch (IOException e) {
+		} catch (Exception e) {
 			return null;
 		}
 	}
@@ -188,8 +217,6 @@ public class PairwiseLearner extends Learner {
 				int index = tf.index_map.get(query).get(doc);
 				Instance testInstance = tf.features.instance(index);
 				documentInstances.add(new Pair<Document, Instance>(doc, testInstance));
-
-
 
 
 
@@ -216,10 +243,11 @@ public class PairwiseLearner extends Learner {
 		double[] differenceVector = new double[numAttributes];
 		
 		// Only go until the instance feature vector - 1 here because we don't need relevance score here
-		for (int k = 0; k < numAttributes-1;k++) {
+		for (int k = 0; k < numAttributes;k++) {
 			differenceVector[k] = vector1.value(k) - vector2.value(k);
 		}
 		return new DenseInstance(1.0, differenceVector);
 	}
+		
 
 }

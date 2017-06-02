@@ -23,4 +23,8 @@ public class Query implements Comparable<Query>{
   public String toString() {
     return query;
   }
+  
+  public List<String> queryWords() {
+	  return queryWords;
+  }
 }

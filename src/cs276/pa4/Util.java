@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cs276.pa4.Scorers.AScorer;
+import cs276.pa4.Scorers.BM25Scorer;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -149,7 +151,7 @@ public class Util {
 	 * @return
 	 */
 	public static Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>>
-		loadSignalFile(String train_data_file, String train_rel_file, Map<String,Double> idfs, boolean standardize) throws IOException {
+		loadSignalFile(String train_data_file, String train_rel_file, Map<String,Double> idfs, boolean standardize, boolean extraFeatures) throws IOException {
 
 		/* Initial feature vectors */
 		Instances X = null;
@@ -167,6 +169,7 @@ public class Util {
 		attributes.add(new Attribute("header_w"));
 		attributes.add(new Attribute("anchor_w"));
 		attributes.add(new Attribute("relevance_score"));
+		if (extraFeatures) attributes.add(new Attribute("bm25"));
 		X = new Instances("train_dataset", attributes, 0);
 		int numAttributes = X.numAttributes();
 		X.setClassIndex(numAttributes-1);
@@ -177,6 +180,7 @@ public class Util {
 		List<Pair<Query, Document>> queryDocList = new ArrayList<Pair<Query,Document>>();
 		try {
 			Map<Query,List<Document>> data_map = Util.loadTrainData (train_data_file);
+			Map<Query,Map<String, Document>> queryDict = Util.loadQueryDict(train_data_file);
 
 			Feature feature = new Feature(idfs);
 			/* Add data */
@@ -186,7 +190,13 @@ public class Util {
 				for (Document doc : data_map.get(query)){
 					index_map.get(query).put(doc, doc_counter);
 					doc_counter ++;
-					double[] features = feature.extractFeatureVector(doc, query);
+					double[] features;
+					if (extraFeatures) {
+						AScorer bm25Scorer = new BM25Scorer(idfs, queryDict);
+						features = feature.extractMoreFeatures(doc, query, queryDict, bm25Scorer);
+					} else {
+						features = feature.extractFeatureVector(doc, query);
+					}
 					double[] instance = new double[numAttributes];
 					for (int i = 0; i < features.length; ++i){
 						instance[i] = features[i];
@@ -342,7 +352,83 @@ public class Util {
 		}
 		return tfs;
 	}
+	
+	public static Map<Query,Map<String, Document>> loadQueryDict(String feature_file_name) throws Exception {
+	    File feature_file = new File(feature_file_name);
+	    if (!feature_file.exists() ) {
+	      System.err.println("Invalid feature file name: " + feature_file_name);
+	      return null;
+	    }
+	    
+	    BufferedReader reader = new BufferedReader(new FileReader(feature_file));
+	    String line = null, url= null, anchor_text = null;
+	    Query query = null;
+	    
+	    /* Feature dictionary: Query -> (url -> Document)  */
+	    Map<Query,Map<String, Document>> queryDict =  new HashMap<Query,Map<String, Document>>();
+	    
+	    while ((line = reader.readLine()) != null) {
+	      String[] tokens = line.split(":", 2);
+	      String key = tokens[0].trim();
+	      String value = tokens[1].trim();
 
+	      if (key.equals("query")) {
+	        query = new Query(value);
+	        queryDict.put(query, new HashMap<String, Document>());
+	      } 
+	      else if (key.equals("url")) {
+	        url = value;
+	        queryDict.get(query).put(url, new Document(url));
+	      } 
+	      else if (key.equals("title")) {
+	        queryDict.get(query).get(url).title = new String(value);
+	      }
+	      else if (key.equals("header")) {
+	        if (queryDict.get(query).get(url).headers == null)
+	          queryDict.get(query).get(url).headers =  new ArrayList<String>();
+	        queryDict.get(query).get(url).headers.add(value);
+	      }
+	      else if (key.equals("body_hits")) {
+	        if (queryDict.get(query).get(url).body_hits == null)
+	          queryDict.get(query).get(url).body_hits = new HashMap<String, List<Integer>>();
+	        String[] temp = value.split(" ", 2);
+	        String term = temp[0].trim();
+	        List<Integer> positions_int;
+	        
+	        if (!queryDict.get(query).get(url).body_hits.containsKey(term)) {
+	          positions_int = new ArrayList<Integer>();
+	          queryDict.get(query).get(url).body_hits.put(term, positions_int);
+	        } else
+	          positions_int = queryDict.get(query).get(url).body_hits.get(term);
+	        
+	        String[] positions = temp[1].trim().split(" ");
+	        for (String position : positions)
+	          positions_int.add(Integer.parseInt(position));
+	        
+	      } 
+	      else if (key.equals("body_length"))
+	        queryDict.get(query).get(url).body_length = Integer.parseInt(value);
+	      else if (key.equals("pagerank"))
+	        queryDict.get(query).get(url).page_rank = Integer.parseInt(value);
+	      else if (key.equals("anchor_text")) {
+	        anchor_text = value;
+	        if (queryDict.get(query).get(url).anchors == null)
+	          queryDict.get(query).get(url).anchors = new HashMap<String, Integer>();
+	      }
+	      else if (key.equals("stanford_anchor_count"))
+	        queryDict.get(query).get(url).anchors.put(anchor_text, Integer.parseInt(value));      
+	    }
+
+	    reader.close();
+	    
+	    return queryDict;
+	  }
+
+	public static void copyNElems(double[] src, double[] dest, int startIndex, int numElems) {
+		for (int i = 0; i < numElems; i++) {
+			dest[startIndex+i] = src[i];
+		}
+	}
 	public static void main(String[] args) {
 		try {
 			System.out.print(loadRelData(args[0]));

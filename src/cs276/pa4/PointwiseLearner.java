@@ -30,7 +30,7 @@ public class PointwiseLearner extends Learner {
 		 */
 
 		try {
-			Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>> signalInfo = Util.loadSignalFile(train_data_file, train_rel_file, idfs, false);
+			Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>> signalInfo = Util.loadSignalFile(train_data_file, train_rel_file, idfs, false, false);
 			return signalInfo.getFirst();
 		} catch(IOException ioe) {
 			ioe.printStackTrace();
@@ -68,7 +68,7 @@ public class PointwiseLearner extends Learner {
 		TestFeatures testFeatures = new TestFeatures();
 		try {
 			Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>> testSignals = 
-					Util.loadSignalFile(test_data_file, null, idfs, false);
+					Util.loadSignalFile(test_data_file, null, idfs, false, false);
 			testFeatures.features = testSignals.getFirst();
 			testFeatures.index_map = testSignals.getFourth();
 			return testFeatures;

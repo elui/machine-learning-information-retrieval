@@ -48,6 +48,7 @@ public class Learning2Rank {
 			 * @TODO: Your code here, add more features 
 			 * */
 			System.err.println("Task 3");
+			learner = new Task3Learner(false);
 
 		} else if (task == 4) {
 
@@ -89,6 +90,7 @@ public class Learning2Rank {
 			 * @TODO: Your code here, add more features 
 			 * */
 			System.err.println("Task 3");
+			learner = new Task3Learner(false);
 
 		} else if (task == 4) {
 
