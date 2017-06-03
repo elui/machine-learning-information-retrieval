@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: stanford dining hall meal plan</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0768653</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.923135 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://rde.stanford.edu/dining/mealplans">meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/mealplans</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://rde.stanford.edu/dining/graduate-and-post-doc-meal-plans">graduate and post doc meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/graduate-and-post-doc-meal-plans</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://rde.stanford.edu/dining/dining-meal-delivery-service">dining meal delivery service stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/dining-meal-delivery-service</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://rde.stanford.edu/dining/mealplans">meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/mealplans</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://rde.stanford.edu/dining/graduate-and-post-doc-meal-plans">graduate and post doc meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/graduate-and-post-doc-meal-plans</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://rde.stanford.edu/dining/my-meal-plan-account">my meal plan account stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/my-meal-plan-account</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://rde.stanford.edu/dining/locations-hours">locations & hours stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/locations-hours</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://rde.stanford.edu/dining">dining landing page stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://rde.stanford.edu/dining/my-meal-plan-account">my meal plan account stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/my-meal-plan-account</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="http://stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf">guidebook</a> <br> <small style="color:green">stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://rde.stanford.edu/dining">dining landing page stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://rde.stanford.edu/dining/dining-meal-delivery-service">dining meal delivery service stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/dining-meal-delivery-service</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://rde.stanford.edu/dining/vegetarian-vegan-dining">vegetarian & vegan dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/vegetarian-vegan-dining</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://rde.stanford.edu/dining/halal-options">halal options stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/halal-options</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://rde.stanford.edu/dining/halal-options">halal options stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/halal-options</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://rde.stanford.edu/dining/vegetarian-vegan-dining">vegetarian & vegan dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/vegetarian-vegan-dining</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://rde.stanford.edu/hospitality/cardinaldollarspecial">cardinal dollars stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/cardinaldollarspecial</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://rde.stanford.edu/dining/locations-hours">locations & hours stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/locations-hours</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="http://stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf">guidebook</a> <br> <small style="color:green">stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://rde.stanford.edu/hospitality/cardinaldollarspecial">cardinal dollars stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/cardinaldollarspecial</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

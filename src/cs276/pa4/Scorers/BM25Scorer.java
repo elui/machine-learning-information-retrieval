@@ -44,6 +44,7 @@ public class BM25Scorer extends AScorer {
 	double pageRankLambdaPrime = 1;
 	double pageRankLambda2Prime = .8;
 	
+	int numDocs = 1;
 	// query -> url -> document
 	Map<Query,Map<String, Document>> queryDict; 
 
@@ -60,6 +61,7 @@ public class BM25Scorer extends AScorer {
 	// Pair(term, Document) -> weight (w[d,t])
 	Map<Pair<String, Document>, Double> termDocWeightMap;
 	
+	double maxIdfVal = 1.0;
 
 	/**
 	 * Construct a BM25Scorer.
@@ -71,6 +73,7 @@ public class BM25Scorer extends AScorer {
 		this.queryDict = queryDict;
 		this.initializeWeightMaps();
 		this.calcAverageLengths();
+		this.maxIdfVal = idfs.values().stream().max((d1, d2) -> d1.compareTo(d2)).get();
 	}
 	
 	public void initializeWeightMaps() {
@@ -161,6 +164,7 @@ public class BM25Scorer extends AScorer {
 			avgLengths.put(type, fieldTotal / docCounter);
 //			avgLengths.put(type, fieldTotal / lengths.size());
 		}
+		numDocs = docCounter;
 	}
 
 	private Double numTokensInList(Collection<String> fieldList) {
@@ -189,16 +193,17 @@ public class BM25Scorer extends AScorer {
 		 */
 		
 //		double nonTextualScore = pageRankLambda * Math.log10(pageRankLambdaPrime + d.page_rank);
-		double nonTextualScore = pageRankLambda * (1 / (pageRankLambdaPrime + Math.exp(-1 * d.page_rank * pageRankLambda2Prime)));
+//		double nonTextualScore = pageRankLambda * (1 / (pageRankLambdaPrime + Math.exp(-1 * d.page_rank * pageRankLambda2Prime)));
+		double nonTextualScore = 0;
 		
 		for (String queryTerm : q.queryWords()) {
 			double termWeight = termDocWeightMap.get(new Pair<String,Document>(queryTerm, d));
 
 			Double idfWeight = idfs.get(queryTerm);
 			if (idfWeight == null) {
-				idfWeight = 1.0;
+//				idfWeight = maxIdfVal;
+				idfWeight = Math.log(numDocs+1);
 			}
-//			idfWeight = idfWeight == null ? idfs.get(LoadHandler.UNSEEN_TERM) : idfWeight;
 
 			score += (termWeight * idfWeight) / (k1 + termWeight);
 		}

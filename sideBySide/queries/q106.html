@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: campus police incidents</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.256544</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.743456 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://police.stanford.edu/"></a> <br> <small style="color:green">police.stanford.edu/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="http://emergency.stanford.edu/category/alertsu/">alertsu emergency information</a> <br> <small style="color:green">emergency.stanford.edu/category/alertsu/</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="http://emergency.stanford.edu/2015/10/police-activity-101715-655-pm/">police activity 10 17 15 6 55 pm emergency information</a> <br> <small style="color:green">emergency.stanford.edu/2015/10/police-activity-101715-655-pm/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://emergency.stanford.edu/category/alertsu/info/">info emergency information</a> <br> <small style="color:green">emergency.stanford.edu/category/alertsu/info/</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://police.stanford.edu/security-report.html">stanford safety security and fire report clery act</a> <br> <small style="color:green">police.stanford.edu/security-report.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://police.stanford.edu/pdf/Stanford_CrimeStats2013-2015.pdf">campus crime statistics 2013 2015</a> <br> <small style="color:green">police.stanford.edu/pdf/Stanford_CrimeStats2013-2015.pdf</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://police.stanford.edu/pdf/Stanford_CrimeStats2013-2015.pdf">campus crime statistics 2013 2015</a> <br> <small style="color:green">police.stanford.edu/pdf/Stanford_CrimeStats2013-2015.pdf</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://police.stanford.edu/"></a> <br> <small style="color:green">police.stanford.edu/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://news.stanford.edu/news/2012/august/campus-police-episode-080312.html">stanford police reviewing episode involving suspect in custody</a> <br> <small style="color:green">news.stanford.edu/news/2012/august/campus-police-episode-080312.html</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://police.stanford.edu/security-report.html">stanford safety security and fire report clery act</a> <br> <small style="color:green">police.stanford.edu/security-report.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="http://emergency.stanford.edu/category/alertsu/">alertsu emergency information</a> <br> <small style="color:green">emergency.stanford.edu/category/alertsu/</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="http://emergency.stanford.edu/2015/10/police-activity-101715-655-pm/">police activity 10 17 15 6 55 pm emergency information</a> <br> <small style="color:green">emergency.stanford.edu/2015/10/police-activity-101715-655-pm/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://emergency.stanford.edu/category/alertsu/info/">info emergency information</a> <br> <small style="color:green">emergency.stanford.edu/category/alertsu/info/</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://news.stanford.edu/2016/09/30/safety-security-fire-report/">stanford releases 2016 safety security and fire report stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/09/30/safety-security-fire-report/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://news.stanford.edu/news/2008/october1/crime-100108.html">annual police report shows strong enforcement of alcohol laws</a> <br> <small style="color:green">news.stanford.edu/news/2008/october1/crime-100108.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://news.stanford.edu/news/2012/august/campus-police-episode-080312.html">stanford police reviewing episode involving suspect in custody</a> <br> <small style="color:green">news.stanford.edu/news/2012/august/campus-police-episode-080312.html</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://news.stanford.edu/2016/09/30/safety-security-fire-report/">stanford releases 2016 safety security and fire report stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/09/30/safety-security-fire-report/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://news.stanford.edu/news/2008/october1/crime-100108.html">annual police report shows strong enforcement of alcohol laws</a> <br> <small style="color:green">news.stanford.edu/news/2008/october1/crime-100108.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://web.stanford.edu/dept/news/pr/02/batterysuspect612.html">stern hall prowler matches description of may 25 sexual battery suspect police say 6 02</a> <br> <small style="color:green">web.stanford.edu/dept/news/pr/02/batterysuspect612.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://web.stanford.edu/dept/news/pr/02/batterysuspect612.html">stern hall prowler matches description of may 25 sexual battery suspect police say 6 02</a> <br> <small style="color:green">web.stanford.edu/dept/news/pr/02/batterysuspect612.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

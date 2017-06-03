@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: nearest grocery store</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.055152</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.944848 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://web.stanford.edu/group/rains/shop_grocery.html">lillore green rains houses</a> <br> <small style="color:green">web.stanford.edu/group/rains/shop_grocery.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://web.stanford.edu/group/rains/shop_grocery.html">lillore green rains houses</a> <br> <small style="color:green">web.stanford.edu/group/rains/shop_grocery.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="http://scocal.stanford.edu/opinion/cabral-v-ralphs-grocery-33956">cabral v ralphs grocery 51 cal 4th 764 248 p 3d 1170 122 cal rptr 3d 313 s178799 mon 02 28 2011 california supreme court resources</a> <br> <small style="color:green">scocal.stanford.edu/opinion/cabral-v-ralphs-grocery-33956</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://web.stanford.edu/group/aagsa/public/Asian%20restaurants%20and%20grocery%20stores.pdf">asian restaurants and grocery stores</a> <br> <small style="color:green">web.stanford.edu/group/aagsa/public/Asian%20restaurants%20and%20grocery%20stores.pdf</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://lbre.stanford.edu/pssistanford-recycling/frequently-asked-questions/frequently-asked-questions-plastic-recycling">frequently asked questions plastic recycling land buildings & real estate</a> <br> <small style="color:green">lbre.stanford.edu/pssistanford-recycling/frequently-asked-questions/frequently-asked-questions-plastic-recycling</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://med.stanford.edu/irt/edtech/video/fall2015auth/html/pdf/inde201-10-05-2015-16-lect-Gardener-1.pdf">gardner obesity and food insecurity pom 5oct15 pdf</a> <br> <small style="color:green">med.stanford.edu/irt/edtech/video/fall2015auth/html/pdf/inde201-10-05-2015-16-lect-Gardener-1.pdf</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://web.stanford.edu/group/aagsa/public/Asian%20restaurants%20and%20grocery%20stores.pdf">asian restaurants and grocery stores</a> <br> <small style="color:green">web.stanford.edu/group/aagsa/public/Asian%20restaurants%20and%20grocery%20stores.pdf</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://news.stanford.edu/2015/06/13/baccalaureate-ceremony-jordan-061315/">vernon jordan urges graduates to be disturbers of the unjust peace</a> <br> <small style="color:green">news.stanford.edu/2015/06/13/baccalaureate-ceremony-jordan-061315/</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://med.stanford.edu/content/dam/sm/stanfordhealth4all/Documents/H4A%202015%20abstracts%20for%20web.pdf">table of abstracts</a> <br> <small style="color:green">med.stanford.edu/content/dam/sm/stanfordhealth4all/Documents/H4A%202015%20abstracts%20for%20web.pdf</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="http://scocal.stanford.edu/opinion/cabral-v-ralphs-grocery-33956">cabral v ralphs grocery 51 cal 4th 764 248 p 3d 1170 122 cal rptr 3d 313 s178799 mon 02 28 2011 california supreme court resources</a> <br> <small style="color:green">scocal.stanford.edu/opinion/cabral-v-ralphs-grocery-33956</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://people.stanford.edu/claudeg/sites/default/files/variability-in-community.pdf">variability in community characteristics and spanish speaking children's home language and literacy opportunities</a> <br> <small style="color:green">people.stanford.edu/claudeg/sites/default/files/variability-in-community.pdf</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://lbre.stanford.edu/pssistanford-recycling/frequently-asked-questions/frequently-asked-questions-plastic-recycling">frequently asked questions plastic recycling land buildings & real estate</a> <br> <small style="color:green">lbre.stanford.edu/pssistanford-recycling/frequently-asked-questions/frequently-asked-questions-plastic-recycling</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://med.stanford.edu/irt/edtech/video/fall2015auth/html/pdf/inde201-10-05-2015-16-lect-Gardener-1.pdf">gardner obesity and food insecurity pom 5oct15 pdf</a> <br> <small style="color:green">med.stanford.edu/irt/edtech/video/fall2015auth/html/pdf/inde201-10-05-2015-16-lect-Gardener-1.pdf</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://med.stanford.edu/content/dam/sm/stanfordhealth4all/Documents/H4A%202015%20abstracts%20for%20web.pdf">table of abstracts</a> <br> <small style="color:green">med.stanford.edu/content/dam/sm/stanfordhealth4all/Documents/H4A%202015%20abstracts%20for%20web.pdf</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://web.stanford.edu/group/peruanos/informa/faq.htm">pes faq</a> <br> <small style="color:green">web.stanford.edu/group/peruanos/informa/faq.htm</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://people.stanford.edu/claudeg/sites/default/files/variability-in-community.pdf">variability in community characteristics and spanish speaking children's home language and literacy opportunities</a> <br> <small style="color:green">people.stanford.edu/claudeg/sites/default/files/variability-in-community.pdf</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://news.stanford.edu/2015/06/13/baccalaureate-ceremony-jordan-061315/">vernon jordan urges graduates to be disturbers of the unjust peace</a> <br> <small style="color:green">news.stanford.edu/2015/06/13/baccalaureate-ceremony-jordan-061315/</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://web.stanford.edu/group/peruanos/informa/faq.htm">pes faq</a> <br> <small style="color:green">web.stanford.edu/group/peruanos/informa/faq.htm</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

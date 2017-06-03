@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: spring semester academic calendar</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0780696</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.92193 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://registrar.stanford.edu/resources-and-help/stanford-academic-calendar">stanford academic calendar registrar's office</a> <br> <small style="color:green">registrar.stanford.edu/resources-and-help/stanford-academic-calendar</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://exploredegrees.stanford.edu/academiccalendar/academiccalendar.pdf">stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/academiccalendar/academiccalendar.pdf</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://ohs.stanford.edu/calendar">calendar stanford online high school</a> <br> <small style="color:green">ohs.stanford.edu/calendar</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://registrar.stanford.edu/resources-and-help/stanford-academic-calendar">stanford academic calendar registrar's office</a> <br> <small style="color:green">registrar.stanford.edu/resources-and-help/stanford-academic-calendar</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://registrar.stanford.edu/resources-and-help/stanford-academic-calendar/previous-academic-calendars/2010-11-stanford-academic">2010 11 stanford academic calendar registrar's office</a> <br> <small style="color:green">registrar.stanford.edu/resources-and-help/stanford-academic-calendar/previous-academic-calendars/2010-11-stanford-academic</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://ohs.stanford.edu/calendar">calendar stanford online high school</a> <br> <small style="color:green">ohs.stanford.edu/calendar</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://continuingstudies.stanford.edu/policies/policies-academic-calendar">policies & info academic calendar</a> <br> <small style="color:green">continuingstudies.stanford.edu/policies/policies-academic-calendar</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://continuingstudies.stanford.edu/policies/policies-academic-calendar">policies & info academic calendar</a> <br> <small style="color:green">continuingstudies.stanford.edu/policies/policies-academic-calendar</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://continuingstudies.stanford.edu/">home</a> <br> <small style="color:green">continuingstudies.stanford.edu/</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://registrar.stanford.edu/resources-and-help/stanford-academic-calendar/previous-academic-calendars/2010-11-stanford-academic">2010 11 stanford academic calendar registrar's office</a> <br> <small style="color:green">registrar.stanford.edu/resources-and-help/stanford-academic-calendar/previous-academic-calendars/2010-11-stanford-academic</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://www-cdn.law.stanford.edu/wp-content/uploads/2015/04/2016-2017-academic-calendar-FINAL.pdf">2016 2017 academic calendar</a> <br> <small style="color:green">www-cdn.law.stanford.edu/wp-content/uploads/2015/04/2016-2017-academic-calendar-FINAL.pdf</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://www-cdn.law.stanford.edu/wp-content/uploads/2015/04/2016-2017-academic-calendar-FINAL.pdf">2016 2017 academic calendar</a> <br> <small style="color:green">www-cdn.law.stanford.edu/wp-content/uploads/2015/04/2016-2017-academic-calendar-FINAL.pdf</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://exploredegrees.stanford.edu/academiccalendar/academiccalendar.pdf">stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/academiccalendar/academiccalendar.pdf</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://www.gsb.stanford.edu/organizations/recruit/finding-candidates/calendar">recruiting calendar stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/organizations/recruit/finding-candidates/calendar</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://rde.stanford.edu/studenthousing/academic-breaks">academic breaks stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/academic-breaks</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://gap.stanford.edu/handbooks/gap-handbook/chapter-3/subchapter-1/page-3-1-1">3.1 1 registration enrollment and academic progress policy graduate academic policies and procedures</a> <br> <small style="color:green">gap.stanford.edu/handbooks/gap-handbook/chapter-3/subchapter-1/page-3-1-1</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://gap.stanford.edu/handbooks/gap-handbook/chapter-3/subchapter-1/page-3-1-1">3.1 1 registration enrollment and academic progress policy graduate academic policies and procedures</a> <br> <small style="color:green">gap.stanford.edu/handbooks/gap-handbook/chapter-3/subchapter-1/page-3-1-1</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://rde.stanford.edu/studenthousing/academic-breaks">academic breaks stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/academic-breaks</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://www.gsb.stanford.edu/organizations/recruit/finding-candidates/calendar">recruiting calendar stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/organizations/recruit/finding-candidates/calendar</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://continuingstudies.stanford.edu/">home</a> <br> <small style="color:green">continuingstudies.stanford.edu/</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

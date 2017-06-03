@@ -27,6 +27,7 @@ public class Task3Learner extends Learner {
 		} catch (Exception e){
 			e.printStackTrace();
 		}
+		model.setGamma(.12);
 
 		if(isLinearKernel){
 			model.setKernelType(new SelectedTag(LibSVM.KERNELTYPE_LINEAR, LibSVM.TAGS_KERNELTYPE));
@@ -47,6 +48,21 @@ public class Task3Learner extends Learner {
 		}
 	}
 	
+	public static ArrayList<Attribute> extraFeatures() {
+		ArrayList<Attribute> attributes = new ArrayList<Attribute>();
+		attributes.add(new Attribute("bm25"));
+		attributes.add(new Attribute("smallestwindow"));
+		attributes.add(new Attribute("pagerank"));
+		attributes.add(new Attribute("isPdf"));
+//		attributes.add(new Attribute("bodylength"));
+//		attributes.add(new Attribute("titlelength"));
+//		attributes.add(new Attribute("percentUrlTerms"));
+//		attributes.add(new Attribute("percentTitleTerms"));
+		attributes.add(new Attribute("percentBodyTerms"));
+//		attributes.add(new Attribute("isHtml"));
+		return attributes;
+	}
+	
 
 	@Override
 	public Instances extractTrainFeatures(String train_data_file,
@@ -63,14 +79,11 @@ public class Task3Learner extends Learner {
 		Instances instances = null;
 		
 		/* Build X and Y matrices */
-		ArrayList<Attribute> attributes = new ArrayList<Attribute>();
-		attributes.add(new Attribute("url_w"));
-		attributes.add(new Attribute("title_w"));
-		attributes.add(new Attribute("body_w"));
-		attributes.add(new Attribute("header_w"));
-		attributes.add(new Attribute("anchor_w"));
-		attributes.add(new Attribute("bm25"));
+	
 
+		
+		ArrayList<Attribute> attributes = Util.basicAttributes();
+		attributes.addAll(extraFeatures());
 		ArrayList<String> classLabels = new ArrayList<String>();
 	    classLabels.add("+1");
 	    classLabels.add("-1");
@@ -136,7 +149,6 @@ public class Task3Learner extends Learner {
 				}
 			}
 
-			System.out.println("extract train: " + instances.get(0));
 			return instances;
 		} catch(Exception ioe) {
 			ioe.printStackTrace();
@@ -171,27 +183,6 @@ public class Task3Learner extends Learner {
 			Quad<Instances, List<Pair<Query, Document>>, ArrayList<Attribute>, Map<Query, Map<Document, Integer>>> testSignals = 
 					Util.loadSignalFile(test_data_file, null, idfs, true, true);
 			Instances instances = testSignals.getFirst();
-//			instances.insertAttributeAt(new Attribute("bm25"), instances.numAttributes()-1);
-//
-//			Map<Query, Map<Document, Integer>> indexMap = testSignals.getFourth();
-//			// Add BM25 score to the features list
-//			for (Query query : indexMap.keySet()) {
-//				List<Pair<Document, Instance>> documentInstances = new ArrayList<Pair<Document,Instance>>();
-//				for (Document doc : indexMap.get(query).keySet()) {
-//					int index = indexMap.get(query).get(doc);
-//
-//					double bm25Score = bm25Scorer.getSimScore(doc, query);
-//					Instance instance = instances.instance(index);
-//					
-//					double[] updatedInstanceVec = new double[instance.numAttributes()+1];
-//					copyNElems(instance.toDoubleArray(), updatedInstanceVec, numFieldFeatures);
-//					updatedInstanceVec[bm25Index] = bm25Score;
-//					Instance newInstance = new DenseInstance(1.0, updatedInstanceVec);
-//
-//					instances.set(index, newInstance);
-//				}
-//			}
-			System.out.println("extract test: " + instances.get(0));
 			testFeatures.features = instances;
 			testFeatures.index_map = testSignals.getFourth();
 			return testFeatures;

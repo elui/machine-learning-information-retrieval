@@ -13,6 +13,7 @@ import java.util.Map;
 
 import cs276.pa4.Scorers.AScorer;
 import cs276.pa4.Scorers.BM25Scorer;
+import cs276.pa4.Scorers.SmallestWindowScorer;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -162,14 +163,12 @@ public class Util {
 			 relData = loadRelData(train_rel_file);
 
 		/* Build X and Y matrices */
-		ArrayList<Attribute> attributes = new ArrayList<Attribute>();
-		attributes.add(new Attribute("url_w"));
-		attributes.add(new Attribute("title_w"));
-		attributes.add(new Attribute("body_w"));
-		attributes.add(new Attribute("header_w"));
-		attributes.add(new Attribute("anchor_w"));
+
+		ArrayList<Attribute> attributes = basicAttributes();
+		if (extraFeatures) {
+			attributes.addAll(Task3Learner.extraFeatures());
+		}
 		attributes.add(new Attribute("relevance_score"));
-		if (extraFeatures) attributes.add(new Attribute("bm25"));
 		X = new Instances("train_dataset", attributes, 0);
 		int numAttributes = X.numAttributes();
 		X.setClassIndex(numAttributes-1);
@@ -182,6 +181,9 @@ public class Util {
 			Map<Query,List<Document>> data_map = Util.loadTrainData (train_data_file);
 			Map<Query,Map<String, Document>> queryDict = Util.loadQueryDict(train_data_file);
 
+			AScorer bm25Scorer = new BM25Scorer(idfs, queryDict);
+			AScorer smallestWindowScorer = new SmallestWindowScorer(idfs, queryDict);
+
 			Feature feature = new Feature(idfs);
 			/* Add data */
 			for (Query query : data_map.keySet()){
@@ -192,8 +194,7 @@ public class Util {
 					doc_counter ++;
 					double[] features;
 					if (extraFeatures) {
-						AScorer bm25Scorer = new BM25Scorer(idfs, queryDict);
-						features = feature.extractMoreFeatures(doc, query, queryDict, bm25Scorer);
+						features = feature.extractMoreFeatures(doc, query, Task3Learner.extraFeatures(), queryDict, bm25Scorer, smallestWindowScorer);
 					} else {
 						features = feature.extractFeatureVector(doc, query);
 					}
@@ -423,6 +424,17 @@ public class Util {
 	    
 	    return queryDict;
 	  }
+	
+	public static ArrayList<Attribute> basicAttributes() {
+		ArrayList<Attribute> attributes = new ArrayList<Attribute>();
+		attributes.add(new Attribute("url_w"));
+		attributes.add(new Attribute("title_w"));
+		attributes.add(new Attribute("body_w"));
+		attributes.add(new Attribute("header_w"));
+		attributes.add(new Attribute("anchor_w"));
+
+		return attributes;
+	}
 
 	public static void copyNElems(double[] src, double[] dest, int startIndex, int numElems) {
 		for (int i = 0; i < numElems; i++) {

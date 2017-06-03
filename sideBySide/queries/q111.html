@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: stanford housing cost</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.302145</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.697855 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary">cost summary stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://rde.stanford.edu/studenthousing/rates-billing">housing rates and billing information stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/rates-billing</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://rde.stanford.edu/studenthousing/summer-rates-single-undergraduates">summer rates for single undergraduates stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/summer-rates-single-undergraduates</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://rde.stanford.edu/studenthousing/rates-billing">housing rates and billing information stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/rates-billing</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="http://exploredegrees.stanford.edu/tuitionfeesandhousing/">tuition fees and housing stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/tuitionfeesandhousing/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="http://exploredegrees.stanford.edu/tuitionfeesandhousing/">tuition fees and housing stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/tuitionfeesandhousing/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://rde.stanford.edu/studenthousing">student housing stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://rde.stanford.edu/studenthousing/incoming-undergraduate-summer-visitors-housing-rates">incoming undergraduate summer visitors housing rates stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/incoming-undergraduate-summer-visitors-housing-rates</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://rde.stanford.edu/studenthousing/rates-billing">housing rates and billing information stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/rates-billing</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://rde.stanford.edu/studenthousing/summer-rates-single-undergraduates">summer rates for single undergraduates stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/summer-rates-single-undergraduates</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://rde.stanford.edu/studenthousing/single-graduate-housing">single graduate housing stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/single-graduate-housing</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://rde.stanford.edu/studenthousing/single-graduate-housing">single graduate housing stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/single-graduate-housing</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://rde.stanford.edu/dining/undergraduate-meal-plans">undergraduate meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/undergraduate-meal-plans</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://rde.stanford.edu/studenthousing">student housing stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://rde.stanford.edu/studenthousing/incoming-undergraduate-summer-visitors-housing-rates">incoming undergraduate summer visitors housing rates stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/incoming-undergraduate-summer-visitors-housing-rates</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary">cost summary stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://rde.stanford.edu/dining/mealplans">meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/mealplans</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://rde.stanford.edu/dining/mealplans">meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/mealplans</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

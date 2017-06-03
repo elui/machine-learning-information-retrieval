@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: president stanford</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.00697582</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.993024 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://president.stanford.edu/">office of the president marc tessier lavigne stanford's 11th president</a> <br> <small style="color:green">president.stanford.edu/</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://president.stanford.edu/">office of the president marc tessier lavigne stanford's 11th president</a> <br> <small style="color:green">president.stanford.edu/</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://president.stanford.edu/contact/">contact office of the president</a> <br> <small style="color:green">president.stanford.edu/contact/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://news.stanford.edu/2016/06/21/stanford-president-elect-marc-tessier-lavigne-preparing-take-office-sept-1/">stanford president elect marc tessier lavigne is preparing to take office sept 1 stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/06/21/stanford-president-elect-marc-tessier-lavigne-preparing-take-office-sept-1/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://news.stanford.edu/features/2016/president-named/tessier-lavigne-cv.pdf">1 marc tessier lavigne curriculum vitae address born nationality the rockefeller university 1230 york avenue new york ny 1</a> <br> <small style="color:green">news.stanford.edu/features/2016/president-named/tessier-lavigne-cv.pdf</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://news.stanford.edu/2016/10/21/inauguration-president-marc-tessier-lavigne/">inauguration of president marc tessier lavigne stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/10/21/inauguration-president-marc-tessier-lavigne/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://news.stanford.edu/features/2016/president-named/">neuroscience pioneer marc tessier lavigne named stanford's next president</a> <br> <small style="color:green">news.stanford.edu/features/2016/president-named/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://news.stanford.edu/features/2016/president-named/">neuroscience pioneer marc tessier lavigne named stanford's next president</a> <br> <small style="color:green">news.stanford.edu/features/2016/president-named/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://news.stanford.edu/2016/10/21/inauguration-president-marc-tessier-lavigne/">inauguration of president marc tessier lavigne stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/10/21/inauguration-president-marc-tessier-lavigne/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://alumni.stanford.edu/get/page/magazine/article/?article_id=83025">stanford magazine article</a> <br> <small style="color:green">alumni.stanford.edu/get/page/magazine/article/?article_id=83025</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://www.stanford.edu/presidentialsearch/">presidential search stanford university</a> <br> <small style="color:green">www.stanford.edu/presidentialsearch/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://news.stanford.edu/features/2016/president-named/tessier-lavigne-cv.pdf">1 marc tessier lavigne curriculum vitae address born nationality the rockefeller university 1230 york avenue new york ny 1</a> <br> <small style="color:green">news.stanford.edu/features/2016/president-named/tessier-lavigne-cv.pdf</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://news.stanford.edu/2016/06/21/stanford-president-elect-marc-tessier-lavigne-preparing-take-office-sept-1/">stanford president elect marc tessier lavigne is preparing to take office sept 1 stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/06/21/stanford-president-elect-marc-tessier-lavigne-preparing-take-office-sept-1/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://president.stanford.edu/contact/">contact office of the president</a> <br> <small style="color:green">president.stanford.edu/contact/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://www.stanford.edu/presidentialsearch/attributes.html">stanford presidential search presidential attributes</a> <br> <small style="color:green">www.stanford.edu/presidentialsearch/attributes.html</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://www.stanford.edu/presidentialsearch/">presidential search stanford university</a> <br> <small style="color:green">www.stanford.edu/presidentialsearch/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://alumni.stanford.edu/get/page/magazine/article/?article_id=83025">stanford magazine article</a> <br> <small style="color:green">alumni.stanford.edu/get/page/magazine/article/?article_id=83025</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://www.stanford.edu/presidentialsearch/attributes.html">stanford presidential search presidential attributes</a> <br> <small style="color:green">www.stanford.edu/presidentialsearch/attributes.html</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://www.stanford.edu/presidentialsearch/committee.html">stanford presidential search search committee</a> <br> <small style="color:green">www.stanford.edu/presidentialsearch/committee.html</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://www.stanford.edu/presidentialsearch/committee.html">stanford presidential search search committee</a> <br> <small style="color:green">www.stanford.edu/presidentialsearch/committee.html</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

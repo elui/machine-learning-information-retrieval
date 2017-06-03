@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse; }
+        th, td { padding: 5px }
+</style>
+</head>
+
+<body>
+<p>Experiment 1: mine <br>
+Experiment 2: golden</p>
+<p>Average NDCG diff [golden - mine]: <b style="color:green">0.114329</b></p>
+<p>Queries are sorted by NDCG diff.</p>
+<table>
+<tr>
+<th></th>
+<th>Query</th>
+<th>NDCG diff</th>
+</tr>
+ <tr>
+ <td>1</td>
+ <td><a href="queries/q1.html">campus bike shop hours</a></td>
+ <td><b style="color:black">0</b></td>
+ </tr>
+ <tr>
+ <td>2</td>
+ <td><a href="queries/q2.html">change meal plan stanford</a></td>
+ <td><b style="color:black">0</b></td>
+ </tr>
+ <tr>
+ <td>3</td>
+ <td><a href="queries/q3.html">dining menus</a></td>
+ <td><b style="color:black">0</b></td>
+ </tr>
+ <tr>
+ <td>4</td>
+ <td><a href="queries/q4.html">hoover tower entrance price</a></td>
+ <td><b style="color:black">0</b></td>
+ </tr>
+ <tr>
+ <td>5</td>
+ <td><a href="queries/q5.html">marguerite schedule</a></td>
+ <td><b style="color:black">0</b></td>
+ </tr>
+ <tr>
+ <td>6</td>
+ <td><a href="queries/q6.html">pool summer opening hours</a></td>
+ <td><b style="color:black">0</b></td>
+ </tr>
+ <tr>
+ <td>7</td>
+ <td><a href="queries/q7.html">axess</a></td>
+ <td><b style="color:green">0.00515088</b></td>
+ </tr>
+ <tr>
+ <td>8</td>
+ <td><a href="queries/q8.html">president stanford</a></td>
+ <td><b style="color:green">0.00697582</b></td>
+ </tr>
+ <tr>
+ <td>9</td>
+ <td><a href="queries/q9.html">bechtel international center hours</a></td>
+ <td><b style="color:green">0.00886251</b></td>
+ </tr>
+ <tr>
+ <td>10</td>
+ <td><a href="queries/q10.html">marguerite shuttle</a></td>
+ <td><b style="color:green">0.00979667</b></td>
+ </tr>
+ <tr>
+ <td>11</td>
+ <td><a href="queries/q11.html">bike registration</a></td>
+ <td><b style="color:green">0.0113248</b></td>
+ </tr>
+ <tr>
+ <td>12</td>
+ <td><a href="queries/q12.html">financial aid office</a></td>
+ <td><b style="color:green">0.0118888</b></td>
+ </tr>
+ <tr>
+ <td>13</td>
+ <td><a href="queries/q13.html">career services</a></td>
+ <td><b style="color:green">0.0119746</b></td>
+ </tr>
+ <tr>
+ <td>14</td>
+ <td><a href="queries/q14.html">cs276 slides</a></td>
+ <td><b style="color:green">0.0128518</b></td>
+ </tr>
+ <tr>
+ <td>15</td>
+ <td><a href="queries/q15.html">how much does parking cost per day</a></td>
+ <td><b style="color:green">0.0134087</b></td>
+ </tr>
+ <tr>
+ <td>16</td>
+ <td><a href="queries/q16.html">dining hours</a></td>
+ <td><b style="color:green">0.0134978</b></td>
+ </tr>
+ <tr>
+ <td>17</td>
+ <td><a href="queries/q17.html">international student center hours</a></td>
+ <td><b style="color:green">0.0145399</b></td>
+ </tr>
+ <tr>
+ <td>18</td>
+ <td><a href="queries/q18.html">stanford visitor parking</a></td>
+ <td><b style="color:green">0.0175713</b></td>
+ </tr>
+ <tr>
+ <td>19</td>
+ <td><a href="queries/q19.html">meal plan dollars</a></td>
+ <td><b style="color:green">0.01938</b></td>
+ </tr>
+ <tr>
+ <td>20</td>
+ <td><a href="queries/q20.html">dining plan</a></td>
+ <td><b style="color:green">0.0195103</b></td>
+ </tr>
+ <tr>
+ <td>21</td>
+ <td><a href="queries/q21.html">academic calendar</a></td>
+ <td><b style="color:green">0.0197599</b></td>
+ </tr>
+ <tr>
+ <td>22</td>
+ <td><a href="queries/q22.html">wilbur dinner</a></td>
+ <td><b style="color:green">0.0212971</b></td>
+ </tr>
+ <tr>
+ <td>23</td>
+ <td><a href="queries/q23.html">stanford history major requirements</a></td>
+ <td><b style="color:green">0.0217101</b></td>
+ </tr>
+ <tr>
+ <td>24</td>
+ <td><a href="queries/q24.html">stanford computer science program sheet</a></td>
+ <td><b style="color:green">0.021998</b></td>
+ </tr>
+ <tr>
+ <td>25</td>
+ <td><a href="queries/q25.html">stanford judo</a></td>
+ <td><b style="color:green">0.0227036</b></td>
+ </tr>
+ <tr>
+ <td>26</td>
+ <td><a href="queries/q26.html">2017 commencement schedule</a></td>
+ <td><b style="color:green">0.0243226</b></td>
+ </tr>
+ <tr>
+ <td>27</td>
+ <td><a href="queries/q27.html">epidermolysis bullosa dermatology</a></td>
+ <td><b style="color:green">0.0274304</b></td>
+ </tr>
+ <tr>
+ <td>28</td>
+ <td><a href="queries/q28.html">nobel laureates</a></td>
+ <td><b style="color:green">0.0290059</b></td>
+ </tr>
+ <tr>
+ <td>29</td>
+ <td><a href="queries/q29.html">scpd lecture videos</a></td>
+ <td><b style="color:green">0.0292794</b></td>
+ </tr>
+ <tr>
+ <td>30</td>
+ <td><a href="queries/q30.html">stanford wilbur front desk</a></td>
+ <td><b style="color:green">0.0298994</b></td>
+ </tr>
+ <tr>
+ <td>31</td>
+ <td><a href="queries/q31.html">sublet student hours</a></td>
+ <td><b style="color:green">0.0301464</b></td>
+ </tr>
+ <tr>
+ <td>32</td>
+ <td><a href="queries/q32.html">hoover institute</a></td>
+ <td><b style="color:green">0.03015</b></td>
+ </tr>
+ <tr>
+ <td>33</td>
+ <td><a href="queries/q33.html">24 hour study buildings campus</a></td>
+ <td><b style="color:green">0.0310541</b></td>
+ </tr>
+ <tr>
+ <td>34</td>
+ <td><a href="queries/q34.html">florence moore address</a></td>
+ <td><b style="color:green">0.031753</b></td>
+ </tr>
+ <tr>
+ <td>35</td>
+ <td><a href="queries/q35.html">places to study</a></td>
+ <td><b style="color:green">0.0350625</b></td>
+ </tr>
+ <tr>
+ <td>36</td>
+ <td><a href="queries/q36.html">old union reserve room</a></td>
+ <td><b style="color:green">0.0382664</b></td>
+ </tr>
+ <tr>
+ <td>37</td>
+ <td><a href="queries/q37.html">24 hour study rooms</a></td>
+ <td><b style="color:green">0.0396482</b></td>
+ </tr>
+ <tr>
+ <td>38</td>
+ <td><a href="queries/q38.html">helpsu ticket request</a></td>
+ <td><b style="color:green">0.0421449</b></td>
+ </tr>
+ <tr>
+ <td>39</td>
+ <td><a href="queries/q39.html">caltrain go pass program</a></td>
+ <td><b style="color:green">0.0426728</b></td>
+ </tr>
+ <tr>
+ <td>40</td>
+ <td><a href="queries/q40.html">best cs classes to take</a></td>
+ <td><b style="color:green">0.043968</b></td>
+ </tr>
+ <tr>
+ <td>41</td>
+ <td><a href="queries/q41.html">grade replacement policy</a></td>
+ <td><b style="color:green">0.0441694</b></td>
+ </tr>
+ <tr>
+ <td>42</td>
+ <td><a href="queries/q42.html">physics</a></td>
+ <td><b style="color:green">0.0448417</b></td>
+ </tr>
+ <tr>
+ <td>43</td>
+ <td><a href="queries/q43.html">lathrop library tech desk printing</a></td>
+ <td><b style="color:green">0.046547</b></td>
+ </tr>
+ <tr>
+ <td>44</td>
+ <td><a href="queries/q44.html">stanford dining hall</a></td>
+ <td><b style="color:green">0.0500455</b></td>
+ </tr>
+ <tr>
+ <td>45</td>
+ <td><a href="queries/q45.html">spring drop deadline</a></td>
+ <td><b style="color:green">0.0509628</b></td>
+ </tr>
+ <tr>
+ <td>46</td>
+ <td><a href="queries/q46.html">club sports teams</a></td>
+ <td><b style="color:green">0.0512449</b></td>
+ </tr>
+ <tr>
+ <td>47</td>
+ <td><a href="queries/q47.html">chemistry</a></td>
+ <td><b style="color:green">0.0518274</b></td>
+ </tr>
+ <tr>
+ <td>48</td>
+ <td><a href="queries/q48.html">nearest grocery store</a></td>
+ <td><b style="color:green">0.055152</b></td>
+ </tr>
+ <tr>
+ <td>49</td>
+ <td><a href="queries/q49.html">vaden hours</a></td>
+ <td><b style="color:green">0.0556271</b></td>
+ </tr>
+ <tr>
+ <td>50</td>
+ <td><a href="queries/q50.html">piazza registration without stanford email</a></td>
+ <td><b style="color:green">0.0559547</b></td>
+ </tr>
+ <tr>
+ <td>51</td>
+ <td><a href="queries/q51.html">credit cost</a></td>
+ <td><b style="color:green">0.0593957</b></td>
+ </tr>
+ <tr>
+ <td>52</td>
+ <td><a href="queries/q52.html">christopher manning</a></td>
+ <td><b style="color:green">0.0623588</b></td>
+ </tr>
+ <tr>
+ <td>53</td>
+ <td><a href="queries/q53.html">stanford dining holiday hours</a></td>
+ <td><b style="color:green">0.067805</b></td>
+ </tr>
+ <tr>
+ <td>54</td>
+ <td><a href="queries/q54.html">stanford commencement</a></td>
+ <td><b style="color:green">0.0692197</b></td>
+ </tr>
+ <tr>
+ <td>55</td>
+ <td><a href="queries/q55.html">math</a></td>
+ <td><b style="color:green">0.0700498</b></td>
+ </tr>
+ <tr>
+ <td>56</td>
+ <td><a href="queries/q56.html">artificial intelligence research</a></td>
+ <td><b style="color:green">0.0763575</b></td>
+ </tr>
+ <tr>
+ <td>57</td>
+ <td><a href="queries/q57.html">stanford dining hall meal plan</a></td>
+ <td><b style="color:green">0.0768653</b></td>
+ </tr>
+ <tr>
+ <td>58</td>
+ <td><a href="queries/q58.html">summer courses</a></td>
+ <td><b style="color:green">0.0772569</b></td>
+ </tr>
+ <tr>
+ <td>59</td>
+ <td><a href="queries/q59.html">mscs admission</a></td>
+ <td><b style="color:green">0.0772723</b></td>
+ </tr>
+ <tr>
+ <td>60</td>
+ <td><a href="queries/q60.html">meal plan cost</a></td>
+ <td><b style="color:green">0.0774605</b></td>
+ </tr>
+ <tr>
+ <td>61</td>
+ <td><a href="queries/q61.html">memorial church</a></td>
+ <td><b style="color:green">0.0780567</b></td>
+ </tr>
+ <tr>
+ <td>62</td>
+ <td><a href="queries/q62.html">spring semester academic calendar</a></td>
+ <td><b style="color:green">0.0780696</b></td>
+ </tr>
+ <tr>
+ <td>63</td>
+ <td><a href="queries/q63.html">stanford ap credit chart</a></td>
+ <td><b style="color:green">0.0837994</b></td>
+ </tr>
+ <tr>
+ <td>64</td>
+ <td><a href="queries/q64.html">nlp group stanford</a></td>
+ <td><b style="color:green">0.0871036</b></td>
+ </tr>
+ <tr>
+ <td>65</td>
+ <td><a href="queries/q65.html">why is stanford rated high in school ranking</a></td>
+ <td><b style="color:green">0.0888226</b></td>
+ </tr>
+ <tr>
+ <td>66</td>
+ <td><a href="queries/q66.html">cssa</a></td>
+ <td><b style="color:green">0.0904269</b></td>
+ </tr>
+ <tr>
+ <td>67</td>
+ <td><a href="queries/q67.html">which cafe opens on sunday</a></td>
+ <td><b style="color:green">0.0912431</b></td>
+ </tr>
+ <tr>
+ <td>68</td>
+ <td><a href="queries/q68.html">magic the gathering</a></td>
+ <td><b style="color:green">0.0945665</b></td>
+ </tr>
+ <tr>
+ <td>69</td>
+ <td><a href="queries/q69.html">lathrop library hours</a></td>
+ <td><b style="color:green">0.0958268</b></td>
+ </tr>
+ <tr>
+ <td>70</td>
+ <td><a href="queries/q70.html">how are stanford dorms</a></td>
+ <td><b style="color:green">0.0996498</b></td>
+ </tr>
+ <tr>
+ <td>71</td>
+ <td><a href="queries/q71.html">arrillaga dining hours</a></td>
+ <td><b style="color:green">0.102672</b></td>
+ </tr>
+ <tr>
+ <td>72</td>
+ <td><a href="queries/q72.html">pizza delivery</a></td>
+ <td><b style="color:green">0.104454</b></td>
+ </tr>
+ <tr>
+ <td>73</td>
+ <td><a href="queries/q73.html">cs course listing</a></td>
+ <td><b style="color:green">0.111472</b></td>
+ </tr>
+ <tr>
+ <td>74</td>
+ <td><a href="queries/q74.html">24 hour study room</a></td>
+ <td><b style="color:green">0.118591</b></td>
+ </tr>
+ <tr>
+ <td>75</td>
+ <td><a href="queries/q75.html">stanford courtesy card application</a></td>
+ <td><b style="color:green">0.119754</b></td>
+ </tr>
+ <tr>
+ <td>76</td>
+ <td><a href="queries/q76.html">dawson engler</a></td>
+ <td><b style="color:green">0.122785</b></td>
+ </tr>
+ <tr>
+ <td>77</td>
+ <td><a href="queries/q77.html">student discount</a></td>
+ <td><b style="color:green">0.124715</b></td>
+ </tr>
+ <tr>
+ <td>78</td>
+ <td><a href="queries/q78.html">computational linguistics research</a></td>
+ <td><b style="color:green">0.126992</b></td>
+ </tr>
+ <tr>
+ <td>79</td>
+ <td><a href="queries/q79.html">stanford healthcare clinics</a></td>
+ <td><b style="color:green">0.127192</b></td>
+ </tr>
+ <tr>
+ <td>80</td>
+ <td><a href="queries/q80.html">stanford cs courses</a></td>
+ <td><b style="color:green">0.127399</b></td>
+ </tr>
+ <tr>
+ <td>81</td>
+ <td><a href="queries/q81.html">database courses</a></td>
+ <td><b style="color:green">0.135435</b></td>
+ </tr>
+ <tr>
+ <td>82</td>
+ <td><a href="queries/q82.html">matlab ssh options</a></td>
+ <td><b style="color:green">0.136616</b></td>
+ </tr>
+ <tr>
+ <td>83</td>
+ <td><a href="queries/q83.html">stanford campus alert</a></td>
+ <td><b style="color:green">0.141456</b></td>
+ </tr>
+ <tr>
+ <td>84</td>
+ <td><a href="queries/q84.html">tresidder union hours</a></td>
+ <td><b style="color:green">0.14158</b></td>
+ </tr>
+ <tr>
+ <td>85</td>
+ <td><a href="queries/q85.html">how many meal plan dollars do i have left</a></td>
+ <td><b style="color:green">0.142049</b></td>
+ </tr>
+ <tr>
+ <td>86</td>
+ <td><a href="queries/q86.html">trump</a></td>
+ <td><b style="color:green">0.144546</b></td>
+ </tr>
+ <tr>
+ <td>87</td>
+ <td><a href="queries/q87.html">stanford parking permits</a></td>
+ <td><b style="color:green">0.145322</b></td>
+ </tr>
+ <tr>
+ <td>88</td>
+ <td><a href="queries/q88.html">stanford aoerc pool hours</a></td>
+ <td><b style="color:green">0.147143</b></td>
+ </tr>
+ <tr>
+ <td>89</td>
+ <td><a href="queries/q89.html">bruno</a></td>
+ <td><b style="color:green">0.148703</b></td>
+ </tr>
+ <tr>
+ <td>90</td>
+ <td><a href="queries/q90.html">stanford outdoor</a></td>
+ <td><b style="color:green">0.15119</b></td>
+ </tr>
+ <tr>
+ <td>91</td>
+ <td><a href="queries/q91.html">scpd tuition</a></td>
+ <td><b style="color:green">0.154675</b></td>
+ </tr>
+ <tr>
+ <td>92</td>
+ <td><a href="queries/q92.html">memorial court</a></td>
+ <td><b style="color:green">0.161775</b></td>
+ </tr>
+ <tr>
+ <td>93</td>
+ <td><a href="queries/q93.html">weight loss</a></td>
+ <td><b style="color:green">0.164921</b></td>
+ </tr>
+ <tr>
+ <td>94</td>
+ <td><a href="queries/q94.html">stanford tuition tax form</a></td>
+ <td><b style="color:green">0.165374</b></td>
+ </tr>
+ <tr>
+ <td>95</td>
+ <td><a href="queries/q95.html">sublets at stanford</a></td>
+ <td><b style="color:green">0.169927</b></td>
+ </tr>
+ <tr>
+ <td>96</td>
+ <td><a href="queries/q96.html">change address in axess</a></td>
+ <td><b style="color:green">0.177499</b></td>
+ </tr>
+ <tr>
+ <td>97</td>
+ <td><a href="queries/q97.html">summer classes 2017</a></td>
+ <td><b style="color:green">0.189661</b></td>
+ </tr>
+ <tr>
+ <td>98</td>
+ <td><a href="queries/q98.html">dining meal plan refund</a></td>
+ <td><b style="color:green">0.190419</b></td>
+ </tr>
+ <tr>
+ <td>99</td>
+ <td><a href="queries/q99.html">stats 305</a></td>
+ <td><b style="color:green">0.200036</b></td>
+ </tr>
+ <tr>
+ <td>100</td>
+ <td><a href="queries/q100.html">alice in wonderland</a></td>
+ <td><b style="color:green">0.206402</b></td>
+ </tr>
+ <tr>
+ <td>101</td>
+ <td><a href="queries/q101.html">nvidia auditorium</a></td>
+ <td><b style="color:green">0.226828</b></td>
+ </tr>
+ <tr>
+ <td>102</td>
+ <td><a href="queries/q102.html">painting studio access in mcmurtry</a></td>
+ <td><b style="color:green">0.234634</b></td>
+ </tr>
+ <tr>
+ <td>103</td>
+ <td><a href="queries/q103.html">winter quarter final schedule</a></td>
+ <td><b style="color:green">0.242369</b></td>
+ </tr>
+ <tr>
+ <td>104</td>
+ <td><a href="queries/q104.html">address of stanford</a></td>
+ <td><b style="color:green">0.243233</b></td>
+ </tr>
+ <tr>
+ <td>105</td>
+ <td><a href="queries/q105.html">stanford credits</a></td>
+ <td><b style="color:green">0.246966</b></td>
+ </tr>
+ <tr>
+ <td>106</td>
+ <td><a href="queries/q106.html">campus police incidents</a></td>
+ <td><b style="color:green">0.256544</b></td>
+ </tr>
+ <tr>
+ <td>107</td>
+ <td><a href="queries/q107.html">harry potter</a></td>
+ <td><b style="color:green">0.278322</b></td>
+ </tr>
+ <tr>
+ <td>108</td>
+ <td><a href="queries/q108.html">computer science master</a></td>
+ <td><b style="color:green">0.280195</b></td>
+ </tr>
+ <tr>
+ <td>109</td>
+ <td><a href="queries/q109.html">best tour spot at stanford</a></td>
+ <td><b style="color:green">0.297164</b></td>
+ </tr>
+ <tr>
+ <td>110</td>
+ <td><a href="queries/q110.html">how many nobel prizes</a></td>
+ <td><b style="color:green">0.301574</b></td>
+ </tr>
+ <tr>
+ <td>111</td>
+ <td><a href="queries/q111.html">stanford housing cost</a></td>
+ <td><b style="color:green">0.302145</b></td>
+ </tr>
+ <tr>
+ <td>112</td>
+ <td><a href="queries/q112.html">cs master tuition</a></td>
+ <td><b style="color:green">0.306829</b></td>
+ </tr>
+ <tr>
+ <td>113</td>
+ <td><a href="queries/q113.html">it resources</a></td>
+ <td><b style="color:green">0.309959</b></td>
+ </tr>
+ <tr>
+ <td>114</td>
+ <td><a href="queries/q114.html">sports in stanford</a></td>
+ <td><b style="color:green">0.341407</b></td>
+ </tr>
+ <tr>
+ <td>115</td>
+ <td><a href="queries/q115.html">how to go to city center</a></td>
+ <td><b style="color:green">0.350424</b></td>
+ </tr>
+ <tr>
+ <td>116</td>
+ <td><a href="queries/q116.html">computer science dean</a></td>
+ <td><b style="color:green">0.350637</b></td>
+ </tr>
+ <tr>
+ <td>117</td>
+ <td><a href="queries/q117.html">which cafe is open on weekends in stanford</a></td>
+ <td><b style="color:green">0.38201</b></td>
+ </tr>
+ <tr>
+ <td>118</td>
+ <td><a href="queries/q118.html">football schedule</a></td>
+ <td><b style="color:green">0.449721</b></td>
+ </tr>
+ <tr>
+ <td>119</td>
+ <td><a href="queries/q119.html">are dogs allowed on campus</a></td>
+ <td><b style="color:green">0.464865</b></td>
+ </tr>
+ <tr>
+ <td>120</td>
+ <td><a href="queries/q120.html">dining for food</a></td>
+ <td><b style="color:green">0.555921</b></td>
+ </tr>
+</table>
+</body>
+</html>

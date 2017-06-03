@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: how much does parking cost per day</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0134087</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.986591 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17">2016 17 permit prices stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17">2016 17 permit prices stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/visitors">visitor parking stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/visitors</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://transportation.stanford.edu/parking">parking stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://transportation.stanford.edu/visitor-parking-rates">2016 17 visitor parking rates stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/visitor-parking-rates</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/visitors">visitor parking stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/visitors</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://transportation.stanford.edu/parking/find-event-parking">find event parking stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/find-event-parking</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://transportation.stanford.edu/visitor-parking-rates">2016 17 visitor parking rates stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/visitor-parking-rates</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://transportation.stanford.edu/parking">parking stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://web.stanford.edu/dept/news/news/2003/august6/park-86.html">parking permit prices to hold steady</a> <br> <small style="color:green">web.stanford.edu/dept/news/news/2003/august6/park-86.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/commuters/which-permit-right-you">which permit is right for you stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/commuters/which-permit-right-you</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/commuters/which-permit-right-you">which permit is right for you stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/commuters/which-permit-right-you</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://transportation.stanford.edu/commute-club/enjoy-membership-rewards/carpool-credit">carpool credit stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/commute-club/enjoy-membership-rewards/carpool-credit</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://transportation.stanford.edu/parking/find-event-parking">find event parking stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/find-event-parking</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://web.stanford.edu/dept/news/news/2003/august6/park-86.html">parking permit prices to hold steady</a> <br> <small style="color:green">web.stanford.edu/dept/news/news/2003/august6/park-86.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://golfcourse.stanford.edu/fees_policies.htm">stanfordgolfcourse com</a> <br> <small style="color:green">golfcourse.stanford.edu/fees_policies.htm</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://golfcourse.stanford.edu/fees_policies.htm">stanfordgolfcourse com</a> <br> <small style="color:green">golfcourse.stanford.edu/fees_policies.htm</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://transportation.stanford.edu/commute-club/enjoy-membership-rewards/carpool-credit">carpool credit stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/commute-club/enjoy-membership-rewards/carpool-credit</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: stanford parking permits</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.145322</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.854678 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://transportation.stanford.edu/parking/deal-with-parking-tickets/parking-permit-fundamentals">what to do about lost stolen permits stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/deal-with-parking-tickets/parking-permit-fundamentals</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/commuters">commuters stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/commuters</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/commuters">commuters stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/commuters</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/how-to-purchase">how to purchase stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/how-to-purchase</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17">2016 17 permit prices stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17">2016 17 permit prices stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/permit-prices-2016-17</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://transportation.stanford.edu/">stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://transportation.stanford.edu/">stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://transportation.stanford.edu/parking/purchase-a-parking-permit/how-to-purchase">how to purchase stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/purchase-a-parking-permit/how-to-purchase</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://transportation.stanford.edu/about/contact">contact p&ts stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/about/contact</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://transportation.stanford.edu/parking/learn-about-vehicle-policies/rules-and-regulations">rules and regulations stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/learn-about-vehicle-policies/rules-and-regulations</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://transportation.stanford.edu/orders/">order or apply</a> <br> <small style="color:green">transportation.stanford.edu/orders/</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://transportation.stanford.edu/about/contact">contact p&ts stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/about/contact</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://transportation.stanford.edu/parking/deal-with-parking-tickets/parking-permit-fundamentals">what to do about lost stolen permits stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/deal-with-parking-tickets/parking-permit-fundamentals</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://transportation.stanford.edu/orders/">order or apply</a> <br> <small style="color:green">transportation.stanford.edu/orders/</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://transportation.stanford.edu/parking/learn-about-vehicle-policies/rules-and-regulations">rules and regulations stanford parking & transportation services</a> <br> <small style="color:green">transportation.stanford.edu/parking/learn-about-vehicle-policies/rules-and-regulations</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://pmplus.stanford.edu/pats/transportation/tour/">access request for tours and large groups</a> <br> <small style="color:green">pmplus.stanford.edu/pats/transportation/tour/</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="http://postdocs.stanford.edu/incoming_scholars/upon_arrival.html">first things first checklist for new postdoctoral scholars information for postdoctural scholars information resources & technology irt stanford university school of medicine</a> <br> <small style="color:green">postdocs.stanford.edu/incoming_scholars/upon_arrival.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="http://postdocs.stanford.edu/incoming_scholars/upon_arrival.html">first things first checklist for new postdoctoral scholars information for postdoctural scholars information resources & technology irt stanford university school of medicine</a> <br> <small style="color:green">postdocs.stanford.edu/incoming_scholars/upon_arrival.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://pmplus.stanford.edu/pats/transportation/tour/">access request for tours and large groups</a> <br> <small style="color:green">pmplus.stanford.edu/pats/transportation/tour/</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

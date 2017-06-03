@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: financial aid office</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0118888</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.988111 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://financialaid.stanford.edu/">financial aid stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://financialaid.stanford.edu/">financial aid stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://www.gsb.stanford.edu/programs/mba/financial-aid">financial aid stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/programs/mba/financial-aid</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="http://financialaid.stanford.edu/aid/tax_info/">tax information stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/aid/tax_info/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://law.stanford.edu/apply/tuition-financial-aid/jd-financial-support/">jd financial support tuition & financial aid stanford law school</a> <br> <small style="color:green">law.stanford.edu/apply/tuition-financial-aid/jd-financial-support/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://financialaid.stanford.edu/contact/">contact us stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/contact/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://financialaid.stanford.edu/contact/">contact us stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/contact/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://financialaid.stanford.edu/loans/">loans stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/loans/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://financialaid.stanford.edu/grad/budget/">the student budget stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/grad/budget/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://financialaid.stanford.edu/undergrad/apply/summer.html">summer session stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/undergrad/apply/summer.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://mse.stanford.edu/admissions/financial-aid">financial aid materials science and engineering</a> <br> <small style="color:green">mse.stanford.edu/admissions/financial-aid</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://law.stanford.edu/apply/tuition-financial-aid/jd-financial-support/">jd financial support tuition & financial aid stanford law school</a> <br> <small style="color:green">law.stanford.edu/apply/tuition-financial-aid/jd-financial-support/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://financialaid.stanford.edu/loans/">loans stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/loans/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://mse.stanford.edu/admissions/financial-aid">financial aid materials science and engineering</a> <br> <small style="color:green">mse.stanford.edu/admissions/financial-aid</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://financialaid.stanford.edu/undergrad/apply/summer.html">summer session stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/undergrad/apply/summer.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://www.gsb.stanford.edu/programs/mba/financial-aid">financial aid stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/programs/mba/financial-aid</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://financialaid.stanford.edu/grad/policy/progress.html">satisfactory academic progress stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/grad/policy/progress.html</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://financialaid.stanford.edu/grad/budget/">the student budget stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/grad/budget/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="http://financialaid.stanford.edu/aid/tax_info/">tax information stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/aid/tax_info/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://financialaid.stanford.edu/grad/policy/progress.html">satisfactory academic progress stanford university</a> <br> <small style="color:green">financialaid.stanford.edu/grad/policy/progress.html</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: cs master tuition</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.306829</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.693171 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://med.stanford.edu/md/mdhandbook/section-7-tuition-and-financial-aid.html">section 7 tuition and financial aid md program stanford medicine</a> <br> <small style="color:green">med.stanford.edu/md/mdhandbook/section-7-tuition-and-financial-aid.html</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://gradadmissions.stanford.edu/admitted-students/financing-graduate-study/estimated-expense-budget">estimated expense budget graduate admissions</a> <br> <small style="color:green">gradadmissions.stanford.edu/admitted-students/financing-graduate-study/estimated-expense-budget</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="http://exploredegrees.stanford.edu/tuitionfeesandhousing/">tuition fees and housing stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/tuitionfeesandhousing/</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://web.stanford.edu/dept/registrar/bulletin1112/5254.htm">master of science in computer science</a> <br> <small style="color:green">web.stanford.edu/dept/registrar/bulletin1112/5254.htm</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://web.stanford.edu/dept/registrar/bulletin1112/4835.htm">tuition fees and housing</a> <br> <small style="color:green">web.stanford.edu/dept/registrar/bulletin1112/4835.htm</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="http://exploredegrees.stanford.edu/tuitionfeesandhousing/">tuition fees and housing stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/tuitionfeesandhousing/</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary">cost summary stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://med.stanford.edu/md/mdhandbook/section-7-tuition-and-financial-aid.html">section 7 tuition and financial aid md program stanford medicine</a> <br> <small style="color:green">med.stanford.edu/md/mdhandbook/section-7-tuition-and-financial-aid.html</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://www-cs.stanford.edu/academics/phd/phd-requirements">phd requirements stanford computer science</a> <br> <small style="color:green">www-cs.stanford.edu/academics/phd/phd-requirements</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://web.stanford.edu/dept/registrar/bulletin1112/4835.htm">tuition fees and housing</a> <br> <small style="color:green">web.stanford.edu/dept/registrar/bulletin1112/4835.htm</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://web.stanford.edu/dept/registrar/bulletin1112/5254.htm">master of science in computer science</a> <br> <small style="color:green">web.stanford.edu/dept/registrar/bulletin1112/5254.htm</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://www-cs.stanford.edu/academics/phd/phd-requirements">phd requirements stanford computer science</a> <br> <small style="color:green">www-cs.stanford.edu/academics/phd/phd-requirements</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://gradadmissions.stanford.edu/admitted-students/financing-graduate-study/estimated-expense-budget">estimated expense budget graduate admissions</a> <br> <small style="color:green">gradadmissions.stanford.edu/admitted-students/financing-graduate-study/estimated-expense-budget</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861">computer science ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load">artificial intelligence graduate certificate stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://scpd.stanford.edu/portal/applications/applicationProfile.do?method=loadApplicationIndex&applicationProfileId=1285200">non degree option application stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/portal/applications/applicationProfile.do?method=loadApplicationIndex&applicationProfileId=1285200</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861">computer science ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load">artificial intelligence graduate certificate stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://scpd.stanford.edu/portal/applications/applicationProfile.do?method=loadApplicationIndex&applicationProfileId=1285200">non degree option application stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/portal/applications/applicationProfile.do?method=loadApplicationIndex&applicationProfileId=1285200</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary">cost summary stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/programs/mba/financial-aid/cost-summary</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

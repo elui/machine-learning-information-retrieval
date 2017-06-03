@@ -28,6 +28,7 @@ public class PairwiseLearner extends Learner {
 		} catch (Exception e){
 			e.printStackTrace();
 		}
+		model.setGamma(.12);
 
 		if(isLinearKernel){
 			model.setKernelType(new SelectedTag(LibSVM.KERNELTYPE_LINEAR, LibSVM.TAGS_KERNELTYPE));

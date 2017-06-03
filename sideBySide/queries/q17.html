@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: international student center hours</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0145399</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.98546 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://bechtel.stanford.edu/about-us/hours">hours bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/about-us/hours</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://bechtel.stanford.edu/about-us/hours">hours bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/about-us/hours</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://bechtel.stanford.edu/">bechtel international center student affairs</a> <br> <small style="color:green">bechtel.stanford.edu/</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://bechtel.stanford.edu/">bechtel international center student affairs</a> <br> <small style="color:green">bechtel.stanford.edu/</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://bechtel.stanford.edu/about-us/appointments">appointments bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/about-us/appointments</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://bechtel.stanford.edu/about-us/appointments">appointments bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/about-us/appointments</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://bechtel.stanford.edu/practical-matters/taxes">taxes bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/practical-matters/taxes</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://ee.stanford.edu/student-resources/CA-appointments/contact">contact information for cas stanford ee</a> <br> <small style="color:green">ee.stanford.edu/student-resources/CA-appointments/contact</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://bechtel.stanford.edu/programs-and-events/events-center">events at the center bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/programs-and-events/events-center</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://bechtel.stanford.edu/programs-and-events/events-center">events at the center bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/programs-and-events/events-center</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://international.stanford.edu/">office of international affairs</a> <br> <small style="color:green">international.stanford.edu/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://international.stanford.edu/">office of international affairs</a> <br> <small style="color:green">international.stanford.edu/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://bechtel.stanford.edu/coming-stanford/new-student-information/removing-enrollment-hold">removing the enrollment hold bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/coming-stanford/new-student-information/removing-enrollment-hold</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://bechtel.stanford.edu/coming-stanford/new-student-information/removing-enrollment-hold">removing the enrollment hold bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/coming-stanford/new-student-information/removing-enrollment-hold</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://undergrad.stanford.edu/advising/student-guides/bechtel-international-center">bechtel international center stanford undergrad</a> <br> <small style="color:green">undergrad.stanford.edu/advising/student-guides/bechtel-international-center</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://bechtel.stanford.edu/practical-matters/taxes">taxes bechtel international center</a> <br> <small style="color:green">bechtel.stanford.edu/practical-matters/taxes</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://ee.stanford.edu/student-resources/CA-appointments/contact">contact information for cas stanford ee</a> <br> <small style="color:green">ee.stanford.edu/student-resources/CA-appointments/contact</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://summer.stanford.edu/welcomeweekend/">welcome weekend 2016 stanford summer</a> <br> <small style="color:green">summer.stanford.edu/welcomeweekend/</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://summer.stanford.edu/welcomeweekend/">welcome weekend 2016 stanford summer</a> <br> <small style="color:green">summer.stanford.edu/welcomeweekend/</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://undergrad.stanford.edu/advising/student-guides/bechtel-international-center">bechtel international center stanford undergrad</a> <br> <small style="color:green">undergrad.stanford.edu/advising/student-guides/bechtel-international-center</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

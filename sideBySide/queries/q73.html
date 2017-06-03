@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: cs course listing</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.111472</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.888528 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://cs.stanford.edu/academics/courses">courses stanford computer science</a> <br> <small style="color:green">cs.stanford.edu/academics/courses</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://cs.stanford.edu/courses/schedules/2015-2016.spring.php">course schedule spring 2015 2016</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2015-2016.spring.php</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://cs.stanford.edu/courses/schedules/2015-2016.summer.php">course schedule summer 2015 2016</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2015-2016.summer.php</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://cs.stanford.edu/courses/schedules/2015-2016.winter.php">course schedule winter 2015 2016</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2015-2016.winter.php</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://cs.stanford.edu/courses/schedules/2016-2017.winter.php">course schedule winter 2016 2017</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2016-2017.winter.php</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://cs.stanford.edu/courses/schedules/2015-2016.summer.php">course schedule summer 2015 2016</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2015-2016.summer.php</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://explorecourses.stanford.edu/">stanford university explore courses</a> <br> <small style="color:green">explorecourses.stanford.edu/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://cs.stanford.edu/courses/schedules/2016-2017.winter.php">course schedule winter 2016 2017</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2016-2017.winter.php</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://cva.stanford.edu/classes/ee482a/schedule.htm">ee482 course schedule</a> <br> <small style="color:green">cva.stanford.edu/classes/ee482a/schedule.htm</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://cs.stanford.edu/academics/courses">courses stanford computer science</a> <br> <small style="color:green">cs.stanford.edu/academics/courses</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://web.stanford.edu/class/math42/schedule.html">math 42 course schedule</a> <br> <small style="color:green">web.stanford.edu/class/math42/schedule.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://explorecourses.stanford.edu/">stanford university explore courses</a> <br> <small style="color:green">explorecourses.stanford.edu/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://cs.stanford.edu/courses/schedules/2015-2016.spring.php">course schedule spring 2015 2016</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2015-2016.spring.php</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://cva.stanford.edu/classes/ee482a/schedule.htm">ee482 course schedule</a> <br> <small style="color:green">cva.stanford.edu/classes/ee482a/schedule.htm</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://cs.stanford.edu/courses/schedules/2015-2016.winter.php">course schedule winter 2015 2016</a> <br> <small style="color:green">cs.stanford.edu/courses/schedules/2015-2016.winter.php</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="http://web.stanford.edu/class/pwr3-02/coursework/content/visrhetschedule.doc">course schedule</a> <br> <small style="color:green">web.stanford.edu/class/pwr3-02/coursework/content/visrhetschedule.doc</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://web.stanford.edu/class/archive/math/math20/math20.1144/schedule.html">math 20 course schedule</a> <br> <small style="color:green">web.stanford.edu/class/archive/math/math20/math20.1144/schedule.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://web.stanford.edu/class/archive/math/math20/math20.1144/schedule.html">math 20 course schedule</a> <br> <small style="color:green">web.stanford.edu/class/archive/math/math20/math20.1144/schedule.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="http://web.stanford.edu/class/pwr3-02/coursework/content/visrhetschedule.doc">course schedule</a> <br> <small style="color:green">web.stanford.edu/class/pwr3-02/coursework/content/visrhetschedule.doc</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://web.stanford.edu/class/math42/schedule.html">math 42 course schedule</a> <br> <small style="color:green">web.stanford.edu/class/math42/schedule.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: stanford healthcare clinics</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.127192</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.872808 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://livertransplant.stanford.edu/">search results stanford health care</a> <br> <small style="color:green">livertransplant.stanford.edu/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="http://alumni.stanford.edu/home/rta/click?rtaCode=650142&rtaTarget=http://stanfordhealthcare.org/medical-clinics/general-dermatology-clinic.html?ecid=derm-stanmag-480x150-na-jun15&rtaTcode=650142&rtaType=P&eid=343064531776">general dermatology clinic stanford health care</a> <br> <small style="color:green">alumni.stanford.edu/home/rta/click?rtaCode=650142&rtaTarget=http</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://med.stanford.edu/neurology/divisions/neuromuscular/adult-neuromuscular-appointment.html">neuromuscular program stanford health care</a> <br> <small style="color:green">med.stanford.edu/neurology/divisions/neuromuscular/adult-neuromuscular-appointment.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://cancer.stanford.edu/gastrocolo/">gastrointestinal gi cancer program stanford health care</a> <br> <small style="color:green">cancer.stanford.edu/gastrocolo/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="http://alumni.stanford.edu/home/rta/click?rtaCode=650142&rtaTarget=http://stanfordhealthcare.org/medical-clinics/general-dermatology-clinic.html?ecid=derm-stanmag-480x150-na-jun15&rtaTcode=650142&rtaType=P&eid=343064531776">general dermatology clinic stanford health care</a> <br> <small style="color:green">alumni.stanford.edu/home/rta/click?rtaCode=650142&rtaTarget=http</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="http://cancer.stanford.edu/radiationoncology/">radiation oncology stanford health care</a> <br> <small style="color:green">cancer.stanford.edu/radiationoncology/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://med.stanford.edu/gastrohep/patient_care/Stanford-Hepatology-Clinic.html">liver clinic hepatology stanford health care</a> <br> <small style="color:green">med.stanford.edu/gastrohep/patient_care/Stanford-Hepatology-Clinic.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://med.stanford.edu/gastrohep/patient_care/Stanford-Hepatology-Clinic.html">liver clinic hepatology stanford health care</a> <br> <small style="color:green">med.stanford.edu/gastrohep/patient_care/Stanford-Hepatology-Clinic.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center.html">digestive health center gastroenterology & hepatology stanford health care</a> <br> <small style="color:green">med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center.html">digestive health center gastroenterology & hepatology stanford health care</a> <br> <small style="color:green">med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="http://news.stanford.edu/2016/04/13/stanford-health-care-names-david-entwistle-president-ceo/">stanford health care names david entwistle president and ceo stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/04/13/stanford-health-care-names-david-entwistle-president-ceo/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center/gi-pain-clinic.html">gastrointestinal gi pain clinic stanford health care</a> <br> <small style="color:green">med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center/gi-pain-clinic.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://cancer.stanford.edu/gastrocolo/">gastrointestinal gi cancer program stanford health care</a> <br> <small style="color:green">cancer.stanford.edu/gastrocolo/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://med.stanford.edu/neurology/divisions/neuromuscular/adult-neuromuscular-appointment.html">neuromuscular program stanford health care</a> <br> <small style="color:green">med.stanford.edu/neurology/divisions/neuromuscular/adult-neuromuscular-appointment.html</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center/gi-pain-clinic.html">gastrointestinal gi pain clinic stanford health care</a> <br> <small style="color:green">med.stanford.edu/gastrohep/patient_care/stanford-digestive-health-center/gi-pain-clinic.html</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://livertransplant.stanford.edu/">search results stanford health care</a> <br> <small style="color:green">livertransplant.stanford.edu/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://med.stanford.edu/bmt/patient_care.html">blood and bone marrow transplant program bmt stanford health care</a> <br> <small style="color:green">med.stanford.edu/bmt/patient_care.html</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://med.stanford.edu/bmt/patient_care.html">blood and bone marrow transplant program bmt stanford health care</a> <br> <small style="color:green">med.stanford.edu/bmt/patient_care.html</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="http://cancer.stanford.edu/radiationoncology/">radiation oncology stanford health care</a> <br> <small style="color:green">cancer.stanford.edu/radiationoncology/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="http://news.stanford.edu/2016/04/13/stanford-health-care-names-david-entwistle-president-ceo/">stanford health care names david entwistle president and ceo stanford news</a> <br> <small style="color:green">news.stanford.edu/2016/04/13/stanford-health-care-names-david-entwistle-president-ceo/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

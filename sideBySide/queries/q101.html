@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: nvidia auditorium</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.226828</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.773172 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://campus-map.stanford.edu/">stanford searchable map</a> <br> <small style="color:green">campus-map.stanford.edu/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=04-080">campus access guide</a> <br> <small style="color:green">maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=04-080</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://events.stanford.edu/byCategory/22/">stanford event calendar engineering</a> <br> <small style="color:green">events.stanford.edu/byCategory/22/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://campus-map.stanford.edu/">stanford searchable map</a> <br> <small style="color:green">campus-map.stanford.edu/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="http://events.stanford.edu/events/649/64941/">shirzad chamine dfj entrepreneurial thought leaders series</a> <br> <small style="color:green">events.stanford.edu/events/649/64941/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://events.stanford.edu/events/617/61703/">jane marie chen dfj entrepreneurial thought leaders series</a> <br> <small style="color:green">events.stanford.edu/events/617/61703/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=04-080">campus access guide</a> <br> <small style="color:green">maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=04-080</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="http://events.stanford.edu/events/617/61713/">bonny simi dfj entrepreneurial thought leaders series</a> <br> <small style="color:green">events.stanford.edu/events/617/61713/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://energy.stanford.edu/energy-seminar/past-energy-seminars?combine=&page=4">past energy seminars page 5 energy</a> <br> <small style="color:green">energy.stanford.edu/energy-seminar/past-energy-seminars?combine=&page=4</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="http://events.stanford.edu/events/649/64941/">shirzad chamine dfj entrepreneurial thought leaders series</a> <br> <small style="color:green">events.stanford.edu/events/649/64941/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="http://events.stanford.edu/events/617/61713/">bonny simi dfj entrepreneurial thought leaders series</a> <br> <small style="color:green">events.stanford.edu/events/617/61713/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://energy.stanford.edu/energy-seminar/past-energy-seminars?combine=&page=4">past energy seminars page 5 energy</a> <br> <small style="color:green">energy.stanford.edu/energy-seminar/past-energy-seminars?combine=&page=4</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://engineering.stanford.edu/events/month/2017-03">events calendar school of engineering</a> <br> <small style="color:green">engineering.stanford.edu/events/month/2017-03</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://engineering.stanford.edu/events/month/2016-10">events calendar school of engineering</a> <br> <small style="color:green">engineering.stanford.edu/events/month/2016-10</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://engineering.stanford.edu/events/month/2016-10">events calendar school of engineering</a> <br> <small style="color:green">engineering.stanford.edu/events/month/2016-10</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://engineering.stanford.edu/events/month/2016-11">events calendar school of engineering</a> <br> <small style="color:green">engineering.stanford.edu/events/month/2016-11</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://events.stanford.edu/events/617/61703/">jane marie chen dfj entrepreneurial thought leaders series</a> <br> <small style="color:green">events.stanford.edu/events/617/61703/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://engineering.stanford.edu/events/month/2017-03">events calendar school of engineering</a> <br> <small style="color:green">engineering.stanford.edu/events/month/2017-03</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://engineering.stanford.edu/events/month/2016-11">events calendar school of engineering</a> <br> <small style="color:green">engineering.stanford.edu/events/month/2016-11</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://events.stanford.edu/byCategory/22/">stanford event calendar engineering</a> <br> <small style="color:green">events.stanford.edu/byCategory/22/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

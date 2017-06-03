@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: dining hours</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0134978</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.986502 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://rde.stanford.edu/dining/dining-hall-hours">dining hall hours stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/dining-hall-hours</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://rde.stanford.edu/dining/dining-hall-hours">dining hall hours stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/dining-hall-hours</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://rde.stanford.edu/dining/graduate-and-postdoc-student-dining-faq">graduate and postdoc student dining faq stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/graduate-and-postdoc-student-dining-faq</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://rde.stanford.edu/dining/graduate-and-postdoc-student-dining-faq">graduate and postdoc student dining faq stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/graduate-and-postdoc-student-dining-faq</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://rde.stanford.edu/dining/lakeside-dining">lakeside dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/lakeside-dining</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://rde.stanford.edu/dining/lakeside-dining">lakeside dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/lakeside-dining</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://rde.stanford.edu/dining/ricker-dining">ricker dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/ricker-dining</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://rde.stanford.edu/dining/ricker-dining">ricker dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/ricker-dining</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://rde.stanford.edu/dining/events-calendar">events & calendar stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/events-calendar</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://rde.stanford.edu/dining/thanksgiving-hours-2015">thanksgiving hours 2015 stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/thanksgiving-hours-2015</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://rde.stanford.edu/dining/winter-hours-2017">winter hours 2017 stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/winter-hours-2017</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://rde.stanford.edu/dining/winter-hours-2017">winter hours 2017 stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/winter-hours-2017</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://rde.stanford.edu/dining/food-allergies">food allergies stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/food-allergies</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://rde.stanford.edu/hospitality/russo-caf%C3%A9">russo café stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/russo-caf%C3%A9</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://rde.stanford.edu/dining/late-nite-lakeside">late nite at lakeside stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/late-nite-lakeside</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://rde.stanford.edu/dining/events-calendar">events & calendar stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/events-calendar</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://rde.stanford.edu/dining/thanksgiving-hours-2015">thanksgiving hours 2015 stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/thanksgiving-hours-2015</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://rde.stanford.edu/dining/food-allergies">food allergies stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/food-allergies</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://rde.stanford.edu/hospitality/russo-caf%C3%A9">russo café stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/russo-caf%C3%A9</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://rde.stanford.edu/dining/late-nite-lakeside">late nite at lakeside stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/late-nite-lakeside</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

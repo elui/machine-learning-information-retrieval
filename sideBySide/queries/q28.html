@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: nobel laureates</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0290059</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.970994 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://news.stanford.edu/nobel/">nobel laureates stanford university</a> <br> <small style="color:green">news.stanford.edu/nobel/</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://news.stanford.edu/nobel/">nobel laureates stanford university</a> <br> <small style="color:green">news.stanford.edu/nobel/</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://ed.stanford.edu/in-the-media/nobel-laureates-education-plea-revolutionize-teaching">a nobel laureate's education plea revolutionize teaching quotes carl wieman and dan schwartz stanford graduate school of education</a> <br> <small style="color:green">ed.stanford.edu/in-the-media/nobel-laureates-education-plea-revolutionize-teaching</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://facts.stanford.edu/academics/faculty">faculty stanford university facts</a> <br> <small style="color:green">facts.stanford.edu/academics/faculty</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://physics.stanford.edu/node/19">nobel prize department of physics</a> <br> <small style="color:green">physics.stanford.edu/node/19</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://physics.stanford.edu/node/19">nobel prize department of physics</a> <br> <small style="color:green">physics.stanford.edu/node/19</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://searchworks.stanford.edu/view/4429962">the nobel laureates how the world's greatest economic minds shaped modern thought in searchworks</a> <br> <small style="color:green">searchworks.stanford.edu/view/4429962</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="http://news.stanford.edu/2015/07/21/laureates-climate-change-072015/">megacities must address climate change stanford nobel laureate says</a> <br> <small style="color:green">news.stanford.edu/2015/07/21/laureates-climate-change-072015/</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://facts.stanford.edu/academics/faculty">faculty stanford university facts</a> <br> <small style="color:green">facts.stanford.edu/academics/faculty</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://ed.stanford.edu/in-the-media/nobel-laureates-education-plea-revolutionize-teaching">a nobel laureate's education plea revolutionize teaching quotes carl wieman and dan schwartz stanford graduate school of education</a> <br> <small style="color:green">ed.stanford.edu/in-the-media/nobel-laureates-education-plea-revolutionize-teaching</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="http://news.stanford.edu/2015/07/21/laureates-climate-change-072015/">megacities must address climate change stanford nobel laureate says</a> <br> <small style="color:green">news.stanford.edu/2015/07/21/laureates-climate-change-072015/</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://ed.stanford.edu/news/nobel-laureate-appointed-stanford-professor-physics-and-education">nobel laureate appointed stanford professor of physics and education stanford graduate school of education</a> <br> <small style="color:green">ed.stanford.edu/news/nobel-laureate-appointed-stanford-professor-physics-and-education</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://ed.stanford.edu/news/nobel-laureate-appointed-stanford-professor-physics-and-education">nobel laureate appointed stanford professor of physics and education stanford graduate school of education</a> <br> <small style="color:green">ed.stanford.edu/news/nobel-laureate-appointed-stanford-professor-physics-and-education</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://med.stanford.edu/news/all-news/2013/10/other-2013-nobel-laureates-in-physiology-or-medicine-have-strong-stanford-ties.html">other 2013 nobel laureates in physiology or medicine have strong stanford ties news center stanford medicine</a> <br> <small style="color:green">med.stanford.edu/news/all-news/2013/10/other-2013-nobel-laureates-in-physiology-or-medicine-have-strong-stanford-ties.html</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://searchworks.stanford.edu/view/7203362">nobel faces a gallery of nobel prize winners in searchworks</a> <br> <small style="color:green">searchworks.stanford.edu/view/7203362</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://www.gsb.stanford.edu/newsroom/school-news/scholes-business-schools-second-nobel-laureate">scholes is business school's second nobel laureate stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/newsroom/school-news/scholes-business-schools-second-nobel-laureate</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://med.stanford.edu/news/all-news/2013/10/other-2013-nobel-laureates-in-physiology-or-medicine-have-strong-stanford-ties.html">other 2013 nobel laureates in physiology or medicine have strong stanford ties news center stanford medicine</a> <br> <small style="color:green">med.stanford.edu/news/all-news/2013/10/other-2013-nobel-laureates-in-physiology-or-medicine-have-strong-stanford-ties.html</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://searchworks.stanford.edu/view/4429962">the nobel laureates how the world's greatest economic minds shaped modern thought in searchworks</a> <br> <small style="color:green">searchworks.stanford.edu/view/4429962</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://www.gsb.stanford.edu/newsroom/school-news/scholes-business-schools-second-nobel-laureate">scholes is business school's second nobel laureate stanford graduate school of business</a> <br> <small style="color:green">www.gsb.stanford.edu/newsroom/school-news/scholes-business-schools-second-nobel-laureate</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://searchworks.stanford.edu/view/7203362">nobel faces a gallery of nobel prize winners in searchworks</a> <br> <small style="color:green">searchworks.stanford.edu/view/7203362</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

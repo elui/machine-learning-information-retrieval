@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: 24 hour study room</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.118591</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.881409 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://library.stanford.edu/libraries/lathrop/24-hour-study-room">24 hour study room stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/libraries/lathrop/24-hour-study-room</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://sul-library-hours-prod.stanford.edu/libraries/lathrop/locations/24-hour-study-room">library hours</a> <br> <small style="color:green">sul-library-hours-prod.stanford.edu/libraries/lathrop/locations/24-hour-study-room</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="http://library.stanford.edu/using/study">places to study stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/using/study</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://library.stanford.edu/libraries/lathrop/24-hour-study-room">24 hour study room stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/libraries/lathrop/24-hour-study-room</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://sul-library-hours-prod.stanford.edu/libraries/lathrop/locations/24-hour-study-room">library hours</a> <br> <small style="color:green">sul-library-hours-prod.stanford.edu/libraries/lathrop/locations/24-hour-study-room</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="http://library.stanford.edu/using/study">places to study stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/using/study</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://news.stanford.edu/2014/04/24/walking-vs-sitting-042414/">stanford study finds walking improves creativity</a> <br> <small style="color:green">news.stanford.edu/2014/04/24/walking-vs-sitting-042414/</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=08-350">campus access guide</a> <br> <small style="color:green">maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=08-350</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://library.stanford.edu/taxonomy/term/35">open late stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/taxonomy/term/35</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://library.stanford.edu/taxonomy/term/35">open late stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/taxonomy/term/35</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://law.stanford.edu/office-of-student-affairs/frequently-asked-questions/">frequently asked questions student affairs stanford law school</a> <br> <small style="color:green">law.stanford.edu/office-of-student-affairs/frequently-asked-questions/</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://news.stanford.edu/2015/11/20/meyer-green-space-112015/">stanford's newest open space meyer green opens tuesday</a> <br> <small style="color:green">news.stanford.edu/2015/11/20/meyer-green-space-112015/</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://news.stanford.edu/2015/11/20/meyer-green-space-112015/">stanford's newest open space meyer green opens tuesday</a> <br> <small style="color:green">news.stanford.edu/2015/11/20/meyer-green-space-112015/</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://library.stanford.edu/news/2017/01/lathrop-cupboard-cafe-opens-january-9th">lathrop cupboard cafe opens january 9th stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/news/2017/01/lathrop-cupboard-cafe-opens-january-9th</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://library.stanford.edu/news/2017/01/lathrop-cupboard-cafe-opens-january-9th">lathrop cupboard cafe opens january 9th stanford university libraries</a> <br> <small style="color:green">library.stanford.edu/news/2017/01/lathrop-cupboard-cafe-opens-january-9th</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://news.stanford.edu/2014/04/24/walking-vs-sitting-042414/">stanford study finds walking improves creativity</a> <br> <small style="color:green">news.stanford.edu/2014/04/24/walking-vs-sitting-042414/</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=08-350">campus access guide</a> <br> <small style="color:green">maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=08-350</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="http://news.stanford.edu/news/2006/november29/meyer-112906.html">library to fête its 40th anniversary</a> <br> <small style="color:green">news.stanford.edu/news/2006/november29/meyer-112906.html</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="http://news.stanford.edu/news/2006/november29/meyer-112906.html">library to fête its 40th anniversary</a> <br> <small style="color:green">news.stanford.edu/news/2006/november29/meyer-112906.html</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://law.stanford.edu/office-of-student-affairs/frequently-asked-questions/">frequently asked questions student affairs stanford law school</a> <br> <small style="color:green">law.stanford.edu/office-of-student-affairs/frequently-asked-questions/</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

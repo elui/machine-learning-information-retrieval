@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: old union reserve room</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0382664</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.961734 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://studentaffairs.stanford.edu/room-reservations/old-union-room-reservations">old union room reservations student affairs</a> <br> <small style="color:green">studentaffairs.stanford.edu/room-reservations/old-union-room-reservations</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://studentaffairs.stanford.edu/room-reservations">room reservations student affairs</a> <br> <small style="color:green">studentaffairs.stanford.edu/room-reservations</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://studentaffairs.stanford.edu/room-reservations">room reservations student affairs</a> <br> <small style="color:green">studentaffairs.stanford.edu/room-reservations</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://studentaffairs.stanford.edu/room-reservations/old-union-room-reservations">old union room reservations student affairs</a> <br> <small style="color:green">studentaffairs.stanford.edu/room-reservations/old-union-room-reservations</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://studentaffairs.stanford.edu/room-reservations/tresidder-room-reservations">tresidder room reservations student affairs</a> <br> <small style="color:green">studentaffairs.stanford.edu/room-reservations/tresidder-room-reservations</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://assu.stanford.edu/oldunion/">old union assu</a> <br> <small style="color:green">assu.stanford.edu/oldunion/</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://assu.stanford.edu/oldunion/">old union assu</a> <br> <small style="color:green">assu.stanford.edu/oldunion/</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://sal.stanford.edu/plan-event/event-registration">event registration student activities and leadership</a> <br> <small style="color:green">sal.stanford.edu/plan-event/event-registration</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://sal.stanford.edu/plan-event/find-venue/performance-and-large-spaces/old-union-clubhouse-ballroom">old union clubhouse ballroom student activities and leadership</a> <br> <small style="color:green">sal.stanford.edu/plan-event/find-venue/performance-and-large-spaces/old-union-clubhouse-ballroom</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://sal.stanford.edu/plan-event/find-venue/performance-and-large-spaces/old-union-clubhouse-ballroom">old union clubhouse ballroom student activities and leadership</a> <br> <small style="color:green">sal.stanford.edu/plan-event/find-venue/performance-and-large-spaces/old-union-clubhouse-ballroom</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://rde.stanford.edu/hospitality/axe-palm">the axe & palm stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/axe-palm</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://sal.stanford.edu/plan-event/find-venue/choosing-event-space-cardinalsync">choosing an event space in cardinalsync student activities and leadership</a> <br> <small style="color:green">sal.stanford.edu/plan-event/find-venue/choosing-event-space-cardinalsync</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://sal.stanford.edu/plan-event/event-registration">event registration student activities and leadership</a> <br> <small style="color:green">sal.stanford.edu/plan-event/event-registration</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://dramacal.stanford.edu/webevent/PDF/Nitery%20Use%20Policy.pdf">page 1 of 3 nitery theater use policy v2 1 the nitery theater in old union is operated by the department of t</a> <br> <small style="color:green">dramacal.stanford.edu/webevent/PDF/Nitery%20Use%20Policy.pdf</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="https://resed.stanford.edu/life-residences/about-events-residence/planning-events">planning events residential education</a> <br> <small style="color:green">resed.stanford.edu/life-residences/about-events-residence/planning-events</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://rde.stanford.edu/hospitality/axe-palm">the axe & palm stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/axe-palm</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://dramacal.stanford.edu/webevent/PDF/Nitery%20Use%20Policy.pdf">page 1 of 3 nitery theater use policy v2 1 the nitery theater in old union is operated by the department of t</a> <br> <small style="color:green">dramacal.stanford.edu/webevent/PDF/Nitery%20Use%20Policy.pdf</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="https://resed.stanford.edu/life-residences/about-events-residence/planning-events">planning events residential education</a> <br> <small style="color:green">resed.stanford.edu/life-residences/about-events-residence/planning-events</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://sal.stanford.edu/plan-event/find-venue/choosing-event-space-cardinalsync">choosing an event space in cardinalsync student activities and leadership</a> <br> <small style="color:green">sal.stanford.edu/plan-event/find-venue/choosing-event-space-cardinalsync</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://studentaffairs.stanford.edu/room-reservations/tresidder-room-reservations">tresidder room reservations student affairs</a> <br> <small style="color:green">studentaffairs.stanford.edu/room-reservations/tresidder-room-reservations</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

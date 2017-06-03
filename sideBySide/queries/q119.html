@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: are dogs allowed on campus</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.464865</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.535135 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://visit.stanford.edu/">visitor information stanford university</a> <br> <small style="color:green">visit.stanford.edu/</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://dramacal.stanford.edu/webevent/PDF/pets%20at%20work.pdf">guidelines as a general rule pets are not permitted in stanford university buildings except animals used in approved</a> <br> <small style="color:green">dramacal.stanford.edu/webevent/PDF/pets%20at%20work.pdf</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://rde.stanford.edu/studenthousing/housing-options">housing options stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/housing-options</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://rde.stanford.edu/studenthousing/apartments-accept-pets">apartments that accept pets stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/apartments-accept-pets</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://rde.stanford.edu/studenthousing/apartments-accept-pets">apartments that accept pets stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/apartments-accept-pets</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://undergrad.stanford.edu/advising/student-guides/guidelines-packing">guidelines for packing stanford undergrad</a> <br> <small style="color:green">undergrad.stanford.edu/advising/student-guides/guidelines-packing</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://rde.stanford.edu/studenthousing">student housing stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://rde.stanford.edu/studenthousing/housing-options">housing options stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/housing-options</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://shc.stanford.edu/fellowships/resources-for-fellows">resources for fellows stanford humanities</a> <br> <small style="color:green">shc.stanford.edu/fellowships/resources-for-fellows</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://rde.stanford.edu/studenthousing/oak-creek-apartments">oak creek apartments stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/oak-creek-apartments</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://rde.stanford.edu/studenthousing/oak-creek-apartments">oak creek apartments stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing/oak-creek-apartments</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://visit.stanford.edu/">visitor information stanford university</a> <br> <small style="color:green">visit.stanford.edu/</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://alumni.stanford.edu/get/page/magazine/article/?article_id=43987">stanford magazine article</a> <br> <small style="color:green">alumni.stanford.edu/get/page/magazine/article/?article_id=43987</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://rde.stanford.edu/studenthousing">student housing stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/studenthousing</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://dramacal.stanford.edu/webevent/PDF/pets%20at%20work.pdf">guidelines as a general rule pets are not permitted in stanford university buildings except animals used in approved</a> <br> <small style="color:green">dramacal.stanford.edu/webevent/PDF/pets%20at%20work.pdf</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://alumni.stanford.edu/get/page/magazine/article/?article_id=43987">stanford magazine article</a> <br> <small style="color:green">alumni.stanford.edu/get/page/magazine/article/?article_id=43987</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://undergrad.stanford.edu/advising/student-guides/guidelines-packing">guidelines for packing stanford undergrad</a> <br> <small style="color:green">undergrad.stanford.edu/advising/student-guides/guidelines-packing</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="http://events.stanford.edu/events/625/62575/">take a break pet a dog</a> <br> <small style="color:green">events.stanford.edu/events/625/62575/</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="http://events.stanford.edu/events/625/62575/">take a break pet a dog</a> <br> <small style="color:green">events.stanford.edu/events/625/62575/</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://shc.stanford.edu/fellowships/resources-for-fellows">resources for fellows stanford humanities</a> <br> <small style="color:green">shc.stanford.edu/fellowships/resources-for-fellows</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

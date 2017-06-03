@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: club sports teams</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0512449</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.948755 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://admission.stanford.edu/student/athletics/club_sports.html">athletics & recreation stanford university</a> <br> <small style="color:green">admission.stanford.edu/student/athletics/club_sports.html</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://admission.stanford.edu/student/athletics/club_sports.html">athletics & recreation stanford university</a> <br> <small style="color:green">admission.stanford.edu/student/athletics/club_sports.html</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="http://facts.stanford.edu/campuslife/athletics">cardinal athletics stanford university facts</a> <br> <small style="color:green">facts.stanford.edu/campuslife/athletics</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="http://facts.stanford.edu/campuslife/athletics">cardinal athletics stanford university facts</a> <br> <small style="color:green">facts.stanford.edu/campuslife/athletics</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="http://web.stanford.edu/group/womensclubsoccer/">stanford women's club soccer</a> <br> <small style="color:green">web.stanford.edu/group/womensclubsoccer/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://www.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/Fall%202016%20Club%20Sports%20Manual%202016-17.pdf">2016 2017</a> <br> <small style="color:green">www.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/Fall%202016%20Club%20Sports%20Manual%202016-17.pdf</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://explorecourses.stanford.edu/search?q=ATHLETIC&view=catalog&academicYear=&filter-departmentcode-ATHLETIC=on&filter-coursestatus-Active=on&filter-term-Autumn=on&filter-term-Winter=on&filter-term-Spring=on&filter-term-Summer=on&page=0">stanford university explore courses</a> <br> <small style="color:green">explorecourses.stanford.edu/search?q=ATHLETIC&view=catalog&academicYear=&filter-departmentcode-ATHLETIC=on&filter-coursestatus-Active=on&filter-term-Autumn=on&filter-term-Winter=on&filter-term-Spring=on&filter-term-Summer=on&page=0</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://web.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/OfficerGuide.docx"></a> <br> <small style="color:green">web.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/OfficerGuide.docx</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://web.stanford.edu/group/cycling/join/">join us stanford cycling team</a> <br> <small style="color:green">web.stanford.edu/group/cycling/join/</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://web.stanford.edu/dept/pe/cgi-bin/wp-content/uploads/2009/06/club-sports-manual-2011-2012-copy.pdf">clubsports stanford edu</a> <br> <small style="color:green">web.stanford.edu/dept/pe/cgi-bin/wp-content/uploads/2009/06/club-sports-manual-2011-2012-copy.pdf</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://web.stanford.edu/dept/pe/cgi-bin/wp-content/uploads/2009/06/club-sports-manual-2011-2012-copy.pdf">clubsports stanford edu</a> <br> <small style="color:green">web.stanford.edu/dept/pe/cgi-bin/wp-content/uploads/2009/06/club-sports-manual-2011-2012-copy.pdf</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="http://web.stanford.edu/group/womensclubsoccer/">stanford women's club soccer</a> <br> <small style="color:green">web.stanford.edu/group/womensclubsoccer/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://www.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/Fall%202016%20Club%20Sports%20Manual%202016-17.pdf">2016 2017</a> <br> <small style="color:green">www.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/Fall%202016%20Club%20Sports%20Manual%202016-17.pdf</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://explorecourses.stanford.edu/search?q=ATHLETIC&view=catalog&academicYear=&filter-departmentcode-ATHLETIC=on&filter-coursestatus-Active=on&filter-term-Autumn=on&filter-term-Winter=on&filter-term-Spring=on&filter-term-Summer=on&page=0">stanford university explore courses</a> <br> <small style="color:green">explorecourses.stanford.edu/search?q=ATHLETIC&view=catalog&academicYear=&filter-departmentcode-ATHLETIC=on&filter-coursestatus-Active=on&filter-term-Autumn=on&filter-term-Winter=on&filter-term-Spring=on&filter-term-Summer=on&page=0</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://web.stanford.edu/dept/OOD/das/YAFeb/common/slideshow/slider.html">tsf student groups slideshow</a> <br> <small style="color:green">web.stanford.edu/dept/OOD/das/YAFeb/common/slideshow/slider.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://web.stanford.edu/group/cycling/join/">join us stanford cycling team</a> <br> <small style="color:green">web.stanford.edu/group/cycling/join/</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://web.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/OfficerGuide.docx"></a> <br> <small style="color:green">web.stanford.edu/dept/pe/cgi-bin/downloads/clubsports/OfficerGuide.docx</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://web.stanford.edu/dept/OOD/das/YAFeb/common/slideshow/slider.html">tsf student groups slideshow</a> <br> <small style="color:green">web.stanford.edu/dept/OOD/das/YAFeb/common/slideshow/slider.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

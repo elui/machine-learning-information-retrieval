@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: scpd tuition</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.154675</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.845325 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="http://scpdweb.stanford.edu/admissions/tuition-fees"></a> <br> <small style="color:green">scpdweb.stanford.edu/admissions/tuition-fees</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://ed.stanford.edu/admissions/financing/masters">financing your education master's programs stanford graduate school of education</a> <br> <small style="color:green">ed.stanford.edu/admissions/financing/masters</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="https://registrar.stanford.edu/students/tuition-and-fees/related-links-and-previous-years-tuition/tuition-and-fees-2015-16/summer">summer quarter tuition 2015 16 registrar's office</a> <br> <small style="color:green">registrar.stanford.edu/students/tuition-and-fees/related-links-and-previous-years-tuition/tuition-and-fees-2015-16/summer</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="http://scpdweb.stanford.edu/admissions/tuition-fees"></a> <br> <small style="color:green">scpdweb.stanford.edu/admissions/tuition-fees</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load">artificial intelligence graduate certificate stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load">artificial intelligence graduate certificate stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?certificateId=1226717&method=load</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861">computer science ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="https://registrar.stanford.edu/students/tuition-and-fees/related-links-and-previous-years-tuition/tuition-and-fees-2015-16/summer">summer quarter tuition 2015 16 registrar's office</a> <br> <small style="color:green">registrar.stanford.edu/students/tuition-and-fees/related-links-and-previous-years-tuition/tuition-and-fees-2015-16/summer</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1163094">statistics ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1163094</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1163094">statistics ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1163094</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240186">biomedical informatics ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240186</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240186">biomedical informatics ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240186</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="http://scpd.stanford.edu/electrical-engineering/">certificates and degrees search results stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/electrical-engineering/</small> <br> Rating: <b>0.5</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="http://scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861">computer science ms degree stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1240861</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://scpd.stanford.edu/sites/default/files/honorscorphandbook.pdf">honors cooperative program student handbook</a> <br> <small style="color:green">scpd.stanford.edu/sites/default/files/honorscorphandbook.pdf</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://scpd.stanford.edu/sites/default/files/honorscorphandbook.pdf">honors cooperative program student handbook</a> <br> <small style="color:green">scpd.stanford.edu/sites/default/files/honorscorphandbook.pdf</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://ed.stanford.edu/admissions/financing/masters">financing your education master's programs stanford graduate school of education</a> <br> <small style="color:green">ed.stanford.edu/admissions/financing/masters</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="http://scpd.stanford.edu/electrical-engineering/">certificates and degrees search results stanford center for professional development</a> <br> <small style="color:green">scpd.stanford.edu/electrical-engineering/</small> <br> Rating: <b>0.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

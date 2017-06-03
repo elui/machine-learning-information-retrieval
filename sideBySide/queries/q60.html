@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: meal plan cost</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0774605</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.92254 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://rde.stanford.edu/dining/undergraduate-meal-plans">undergraduate meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/undergraduate-meal-plans</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://rde.stanford.edu/dining/undergraduate-meal-plans">undergraduate meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/undergraduate-meal-plans</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="http://exploredegrees.stanford.edu/tuitionfeesandhousing/">tuition fees and housing stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/tuitionfeesandhousing/</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://rde.stanford.edu/dining/undergraduate-meal-plans">undergraduate meal plans stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/undergraduate-meal-plans</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://summer.stanford.edu/programs/international/housing-dining/">housing & dining stanford summer</a> <br> <small style="color:green">summer.stanford.edu/programs/international/housing-dining/</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="https://web.stanford.edu/dept/registrar/bulletin0809/4848.htm">meal plans</a> <br> <small style="color:green">web.stanford.edu/dept/registrar/bulletin0809/4848.htm</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://rde.stanford.edu/dining/wilbur-dining">wilbur dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/wilbur-dining</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="http://web.stanford.edu/dept/rde/dining/pdfs/2011DiningTour_brochure_12.8.pdf">stanford dining</a> <br> <small style="color:green">web.stanford.edu/dept/rde/dining/pdfs/2011DiningTour_brochure_12.8.pdf</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="https://web.stanford.edu/dept/registrar/bulletin0809/4848.htm">meal plans</a> <br> <small style="color:green">web.stanford.edu/dept/registrar/bulletin0809/4848.htm</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://summer.stanford.edu/programs/international/housing-dining/">housing & dining stanford summer</a> <br> <small style="color:green">summer.stanford.edu/programs/international/housing-dining/</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://summercollege.stanford.edu/gateway/understanding-bill">understanding the bill high school summer college</a> <br> <small style="color:green">summercollege.stanford.edu/gateway/understanding-bill</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="http://exploredegrees.stanford.edu/tuitionfeesandhousing/">tuition fees and housing stanford university</a> <br> <small style="color:green">exploredegrees.stanford.edu/tuitionfeesandhousing/</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://summercollege.stanford.edu/gateway/housing-dining">housing & dining high school summer college</a> <br> <small style="color:green">summercollege.stanford.edu/gateway/housing-dining</small> <br> Rating: <b>1</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf">guidebook</a> <br> <small style="color:green">stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf">guidebook</a> <br> <small style="color:green">stanford.edu/dept/rde/cgi-bin/drupal/dining/sites/default/files/pdfs/RFRA_2013Guidebook_050714.pdf</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://rde.stanford.edu/dining/wilbur-dining">wilbur dining stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/dining/wilbur-dining</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="http://web.stanford.edu/dept/rde/dining/pdfs/2011DiningTour_brochure_12.8.pdf">stanford dining</a> <br> <small style="color:green">web.stanford.edu/dept/rde/dining/pdfs/2011DiningTour_brochure_12.8.pdf</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://summercollege.stanford.edu/gateway/housing-dining">housing & dining high school summer college</a> <br> <small style="color:green">summercollege.stanford.edu/gateway/housing-dining</small> <br> Rating: <b>1</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>

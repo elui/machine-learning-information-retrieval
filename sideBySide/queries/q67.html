@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        table, th, td { border: 1px solid black; border-collapse: collapse;}
+        th, td {padding: 10px}
+        .box { float: left; width: 20px; height: 20px; margin: 5px; border: 1px solid rgba(0, 0, 0, .2);}
+        </style>
+</head>
+<body>
+<p><b>Query: which cafe opens on sunday</b></p>
+<p>NDCG diff [golden - mine]: <b style="color:green">0.0912431</b></p>
+<table style="width:100%">
+<tr>
+<th>Experiment 1: mine <br> NDCG = 0.908757 </th>
+<th>Experiment 2: golden <br> NDCG = 1 </th>
+</tr>
+<tr>
+<td>
+ P1: <a href="https://museum.stanford.edu/visit/cafe.html">cantor arts center the café</a> <br> <small style="color:green">museum.stanford.edu/visit/cafe.html</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P8: <a href="http://pem.stanford.edu/parents/information.html">information pediatric emergency medicine stanford medicine</a> <br> <small style="color:green">pem.stanford.edu/parents/information.html</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P2: <a href="http://visit.stanford.edu/activities/dining.html">dining stanford university</a> <br> <small style="color:green">visit.stanford.edu/activities/dining.html</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P2: <a href="http://visit.stanford.edu/activities/dining.html">dining stanford university</a> <br> <small style="color:green">visit.stanford.edu/activities/dining.html</small> <br> Rating: <b>3</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P3: <a href="https://museum.stanford.edu/visit/plan_a_visit.html">cantor arts center plan a visit</a> <br> <small style="color:green">museum.stanford.edu/visit/plan_a_visit.html</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P5: <a href="http://sun.stanford.edu/LWS_Workshop/DiningPlaces.pdf">arbuckle dining pavilion map graduate school of business knight management center north bldg 655 knight way tel 650 723</a> <br> <small style="color:green">sun.stanford.edu/LWS_Workshop/DiningPlaces.pdf</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P4: <a href="https://rde.stanford.edu/hospitality/axe-palm">the axe & palm stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/axe-palm</small> <br> Rating: <b>2</b> <br> Debug:  <br></td>
+<td>
+ P6: <a href="https://alumni.stanford.edu/content/saa/reunion/pdfs/RH13_Places_to_View_Football_on_Campus.pdf">axe & palm the café arrillaga alumni center</a> <br> <small style="color:green">alumni.stanford.edu/content/saa/reunion/pdfs/RH13_Places_to_View_Football_on_Campus.pdf</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P5: <a href="http://sun.stanford.edu/LWS_Workshop/DiningPlaces.pdf">arbuckle dining pavilion map graduate school of business knight management center north bldg 655 knight way tel 650 723</a> <br> <small style="color:green">sun.stanford.edu/LWS_Workshop/DiningPlaces.pdf</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P1: <a href="https://museum.stanford.edu/visit/cafe.html">cantor arts center the café</a> <br> <small style="color:green">museum.stanford.edu/visit/cafe.html</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P6: <a href="https://alumni.stanford.edu/content/saa/reunion/pdfs/RH13_Places_to_View_Football_on_Campus.pdf">axe & palm the café arrillaga alumni center</a> <br> <small style="color:green">alumni.stanford.edu/content/saa/reunion/pdfs/RH13_Places_to_View_Football_on_Campus.pdf</small> <br> Rating: <b>2.5</b> <br> Debug:  <br></td>
+<td>
+ P3: <a href="https://museum.stanford.edu/visit/plan_a_visit.html">cantor arts center plan a visit</a> <br> <small style="color:green">museum.stanford.edu/visit/plan_a_visit.html</small> <br> Rating: <b>2.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P7: <a href="https://web.stanford.edu/~sommer/ASL-local.html"></a> <br> <small style="color:green">web.stanford.edu/~sommer/ASL-local.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P4: <a href="https://rde.stanford.edu/hospitality/axe-palm">the axe & palm stanford r&de</a> <br> <small style="color:green">rde.stanford.edu/hospitality/axe-palm</small> <br> Rating: <b>2</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P8: <a href="http://pem.stanford.edu/parents/information.html">information pediatric emergency medicine stanford medicine</a> <br> <small style="color:green">pem.stanford.edu/parents/information.html</small> <br> Rating: <b>3</b> <br> Debug:  <br></td>
+<td>
+ P10: <a href="https://aac2014.stanford.edu/sites/default/files/pdf-files/2013_info_and_amenity_sheet_with_map.pdf">welcome to hayes mansion a dolce destination in an effort to provide you with a productive and enjoyable visit the following</a> <br> <small style="color:green">aac2014.stanford.edu/sites/default/files/pdf-files/2013_info_and_amenity_sheet_with_map.pdf</small> <br> Rating: <b>1.5</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P9: <a href="https://museum.stanford.edu/news_room/archived_announcements_name_change.html">cantor arts center archived press release</a> <br> <small style="color:green">museum.stanford.edu/news_room/archived_announcements_name_change.html</small> <br> Rating: <b>0</b> <br> Debug:  <br></td>
+<td>
+ P9: <a href="https://museum.stanford.edu/news_room/archived_announcements_name_change.html">cantor arts center archived press release</a> <br> <small style="color:green">museum.stanford.edu/news_room/archived_announcements_name_change.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+<tr>
+<td>
+ P10: <a href="https://aac2014.stanford.edu/sites/default/files/pdf-files/2013_info_and_amenity_sheet_with_map.pdf">welcome to hayes mansion a dolce destination in an effort to provide you with a productive and enjoyable visit the following</a> <br> <small style="color:green">aac2014.stanford.edu/sites/default/files/pdf-files/2013_info_and_amenity_sheet_with_map.pdf</small> <br> Rating: <b>1.5</b> <br> Debug:  <br></td>
+<td>
+ P7: <a href="https://web.stanford.edu/~sommer/ASL-local.html"></a> <br> <small style="color:green">web.stanford.edu/~sommer/ASL-local.html</small> <br> Rating: <b>0</b> <br> Debug: This is golden ranking! <br></td>
+</tr>
+</table>
+</body>
+</html>
